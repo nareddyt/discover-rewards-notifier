@@ -1,8 +1,8 @@
 {
   "title": "Actual deal title: 10% off your purchase at American Eagle",
-  "name": "Website name here: American Eagle",
+  "site_name": "Website name here: American Eagle",
   "hostname": "Website hostname here: www.ae.com",
-  "deal_url": "Relative path to specific discover deal: #/deal/10653",
+  "deal_url": "Absolute path to specific discover deal: https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10653",
   "img_src_url": "Absolute url to the image associated with the deal: https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10552",
-  "expiry_date": "Expiry date for the deal: 12/31/2018"
+  "expiry_date": "Expiry date for the deal: 12/31/2018, Ongoing"
 }
