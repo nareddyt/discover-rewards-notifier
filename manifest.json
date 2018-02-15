@@ -1,0 +1,18 @@
+{
+  "name": "Discover Deals Notifier",
+  "version": "1.0",
+  "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon-128.png",
+    "default_title" : "A Discover Deal is active for this website!"
+  },
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "manifest_version": 2
+}
