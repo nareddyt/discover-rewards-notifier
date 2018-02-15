@@ -3,12 +3,12 @@
   "version": "1.0",
   "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["src/background.js"],
     "persistent": false
   },
   "page_action" :
   {
-    "default_icon" : "icon-128.png",
+    "default_icon" : "icon/icon-128.png",
     "default_title" : "Turns colorful when this site qualifies for a Discover Deal"
   },
   "permissions" : [
