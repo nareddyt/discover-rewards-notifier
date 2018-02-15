@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/nareddyt/discover-deals-notifier-extension/issues"
   },
-  "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme"
+  "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme",
+  "dependencies": {
+    "google": "^2.1.0"
+  }
 }
