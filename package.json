@@ -1,0 +1,16 @@
+{
+  "name": "discover-deals-tools",
+  "version": "1.0.0",
+  "description": "Simple npm scripts to convert raw data from discover.com to usable jsons",
+  "main": "converter.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nareddyt/discover-deals-notifier-extension.git"
+  },
+  "author": "Tejasvi Nareddy <tejunareddy@gmail.com> (https://www.tejunareddy.com)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nareddyt/discover-deals-notifier-extension/issues"
+  },
+  "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme"
+}
