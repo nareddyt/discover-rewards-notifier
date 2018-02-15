@@ -1,11 +1,23 @@
-// This is a node.js script!
+// This is a ES6 node.js script! Please install dependencies from package.json
 
 let fs = require('fs');
 let xml_lines = fs.readFileSync('../data/deals_02-13-2018.html').toString().split("\n");
 let google = require('google');
+let randomUserAgent = require('random-useragent');
+
+google.resultsPerPage = 5;
+/**
+ * Helps prevent Google's bot detection :)
+ */
+function setUserAgent() {
+  google.requestOptions = {
+    headers: {
+      'User-Agent': randomUserAgent.getRandom()
+    }
+  };
+}
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
-google.resultsPerPage = 25;
 
 let deals = [];
 
@@ -29,6 +41,8 @@ googleSearch(deals[index].site_name);
 
 function googleSearch(input) {
   console.log('Googling for', input);
+  setUserAgent();
+
   google(input, function (err, res) {
     if (err) {
       console.error(err);

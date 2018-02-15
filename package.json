@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme",
   "dependencies": {
-    "google": "^2.1.0"
+    "google": "^2.1.0",
+    "random-useragent": "^0.3.1"
   }
 }
