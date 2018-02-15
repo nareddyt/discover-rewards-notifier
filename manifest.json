@@ -9,7 +9,7 @@
   "page_action" :
   {
     "default_icon" : "icon-128.png",
-    "default_title" : "A Discover Deal is active for this website!"
+    "default_title" : "Turns colorful when this site qualifies for a Discover Deal"
   },
   "permissions" : [
     "declarativeContent"

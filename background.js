@@ -8,16 +8,16 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.declarativeContent.onPageChanged.addRules([
 
       {
-        // That fires for a specific url
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {
-              hostEquals: 'ae.com'
+              hostEquals: 'www.ae.com'
             }
           })
         ],
-        // And shows the extension's page action.
-        actions: [ new chrome.declarativeContent.ShowPageAction() ]
+        actions: [
+          new chrome.declarativeContent.ShowPageAction()
+        ]
       }
 
     ]);
