@@ -1,0 +1,1 @@
+# discover-deals-notifier-extension
