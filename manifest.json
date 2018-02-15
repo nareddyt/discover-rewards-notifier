@@ -3,7 +3,9 @@
   "version": "1.0",
   "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
   "background": {
-    "scripts": ["src/background.js"],
+    "scripts": [
+      "src/background.js"
+    ],
     "persistent": false
   },
   "page_action" :
