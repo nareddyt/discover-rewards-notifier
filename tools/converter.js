@@ -30,7 +30,7 @@ for (let i = 0; i < xml_lines.length; i++) {
   let deal = {
     title: decode(xml_line.match("\"sr-only\"> (.*)<\\/span>")[1]),
     site_name: decode(xml_line.match("<\\/b> (.*)<\\/h3>")[1]),
-    hostname: null,
+    site_url: null,
     deal_url: DEAL_URL + xml_line.match("#\\/deal\\/\\d*")[0],
     img_src_url: xml_line.match("(https:\\/\\/www.discovercard.com\\/extras.*)\" alt")[1],
     expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
@@ -65,7 +65,7 @@ function googleSearch(input) {
         console.warn('next link...');
         i++;
       } else {
-        deals[index].hostname = link;
+        deals[index].site_url = link;
         keepGoing = false;
       }
     }
