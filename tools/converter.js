@@ -4,6 +4,8 @@ let fs = require('fs');
 let xml_lines = fs.readFileSync('../data/deals_02-13-2018.html').toString().split("\n");
 let google = require('google');
 let randomUserAgent = require('random-useragent');
+let decode = require('unescape');
+let jsonfile = require('jsonfile');
 
 google.resultsPerPage = 5;
 /**
@@ -18,6 +20,7 @@ function setUserAgent() {
 }
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
+const DATA_OUTPUT_FILE = 'latest_data.json';
 
 let deals = [];
 
@@ -25,12 +28,12 @@ for (let i = 0; i < xml_lines.length; i++) {
   let xml_line = xml_lines[i];
 
   let deal = {
-    title: xml_line.match("\"sr-only\"> (.*)<\\/span>")[1],
-    site_name: xml_line.match("<\\/b> (.*)<\\/h3>")[1],
+    title: decode(xml_line.match("\"sr-only\"> (.*)<\\/span>")[1]),
+    site_name: decode(xml_line.match("<\\/b> (.*)<\\/h3>")[1]),
     hostname: null,
     deal_url: DEAL_URL + xml_line.match("#\\/deal\\/\\d*")[0],
     img_src_url: xml_line.match("(https:\\/\\/www.discovercard.com\\/extras.*)\" alt")[1],
-    expiry_date: xml_line.match("class=\"date\">(.*)<\\/div>")[1]
+    expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
   };
 
   deals.push(deal);
@@ -69,13 +72,15 @@ function googleSearch(input) {
 
     index++;
     if (index === deals.length) {
-      fixHostNames();
+      saveData();
     } else {
       googleSearch(deals[index].site_name);
     }
   });
 }
 
-function fixHostNames() {
-  console.log(deals);
+function saveData() {
+  jsonfile.writeFile(DATA_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
+    console.error(err)
+  })
 }
