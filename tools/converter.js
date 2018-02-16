@@ -7,20 +7,20 @@ let randomUserAgent = require('random-useragent');
 let decode = require('unescape');
 let jsonfile = require('jsonfile');
 
-google.resultsPerPage = 5;
+google.resultsPerPage = 10;
 /**
  * Helps prevent Google's bot detection :)
  */
 function setUserAgent() {
-  google.requestOptions = {
-    headers: {
-      'User-Agent': randomUserAgent.getRandom()
-    }
-  };
+  // google.requestOptions = {
+  //   headers: {
+  //     'User-Agent': randomUserAgent.getRandom()
+  //   }
+  // };
 }
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
-const DATA_OUTPUT_FILE = 'latest_data.json';
+const DATA_OUTPUT_FILE = '../data/latest_data.json';
 
 let deals = [];
 
