@@ -1,7 +1,7 @@
 {
   "name": "discover-deals-tools",
   "version": "1.0.0",
-  "description": "Simple npm scripts to convert raw data from discover.com to usable jsons",
+  "description": "Simple npm scripts and packages to help automate some actions",
   "main": "converter.js",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "url": "https://github.com/nareddyt/discover-deals-notifier-extension/issues"
   },
   "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme",
-  "dependencies": {
+  "devDependencies": {
     "google": "^2.1.0",
     "jsonfile": "^4.0.0",
     "random-useragent": "^0.3.1",
