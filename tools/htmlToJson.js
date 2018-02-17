@@ -6,6 +6,7 @@ let google = require('google');
 let randomUserAgent = require('random-useragent');
 let decode = require('unescape');
 let jsonfile = require('jsonfile');
+const { URL } = require('url');
 
 google.resultsPerPage = 10;
 /**
@@ -60,12 +61,14 @@ function googleSearch(input) {
     let keepGoing = true;
     for (let i = 0; keepGoing; i++) {
       let link = res.links[i].href;
-      console.log('Found link', link);
       if (link === null) {
         console.warn('next link...');
         i++;
       } else {
-        deals[index].site_url = link;
+        // Only keep hostname
+        const myURL = new URL(link);
+        deals[index].site_url = myURL.hostname;
+        console.log('Found hostname', myURL.hostname);
         keepGoing = false;
       }
     }
@@ -81,6 +84,8 @@ function googleSearch(input) {
 
 function saveData() {
   jsonfile.writeFile(DATA_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
-    console.error(err)
+    if (err) {
+      console.error(err);
+    }
   })
 }
