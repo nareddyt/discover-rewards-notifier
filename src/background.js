@@ -1,9 +1,9 @@
 
-const LATEST_DATA_PATH = '../data/latest_data.json';
+const DEAL_DATA_PATH = '../data/deals.json';
 let deals = null;
 let enabledTabs = {};
 
-fetchJSONFile(LATEST_DATA_PATH, function (data) {
+fetchJSONFile(DEAL_DATA_PATH, function (data) {
   deals = data;
   chrome.tabs.onRemoved.addListener(onTabRemoved);
   chrome.tabs.onUpdated.addListener(onTabUpdated);

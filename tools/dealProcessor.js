@@ -21,7 +21,7 @@ function setUserAgent() {
 }
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
-const DATA_OUTPUT_FILE = '../data/latest_data.json';
+const DEAL_OUTPUT_FILE = '../data/deals.json';
 
 let deals = [];
 
@@ -83,7 +83,7 @@ function googleSearch(input) {
 }
 
 function saveData() {
-  jsonfile.writeFile(DATA_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
+  jsonfile.writeFile(DEAL_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
     if (err) {
       console.error(err);
     }
