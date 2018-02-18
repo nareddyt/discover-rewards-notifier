@@ -61,6 +61,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
   // Enable page action
   // Set popup (title for now)
   // Add to enabled
+
   // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
 

@@ -4,16 +4,15 @@
   "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
   "background": {
     "scripts": [
-      "src/background.js",
-      "handlebars.min-latest.js",
-      "templates.js"
+      "src/background.js"
     ],
     "persistent": true
   },
-  "page_action" :
+  "page_action":
   {
-    "default_icon" : "icon/icon-128.png",
-    "default_title" : "Turns colorful when this site qualifies for a Discover Deal"
+    "default_icon": "icon/icon-128.png",
+    "default_title": "No Discover Deal for this page",
+    "default_popup": "src/popup.html"
   },
   "permissions" : [
     "tabs"
