@@ -2,7 +2,6 @@
 const LATEST_DATA_PATH = '../data/latest_data.json';
 let deals = null;
 let enabledTabs = {};
-let latestTabId = null;
 
 fetchJSONFile(LATEST_DATA_PATH, function (data) {
   deals = data;
@@ -65,7 +64,6 @@ function onTabUpdated(tabId, changeInfo, tab) {
 
   // Add to enabled
   // console.info(tabId, 'Adding', tabId, 'to enabledTabs');
-  latestTabId = tabId;
   enabledTabs[tabId] = deal;
   console.debug(enabledTabs);
 }
@@ -98,11 +96,6 @@ function fetchJSONFile(path, callback) {
   };
   httpRequest.open('GET', path);
   httpRequest.send();
-}
-
-
-function getLatestTabId() {
-  return latestTabId;
 }
 
 function getEnabledTabs() {
