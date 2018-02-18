@@ -4,7 +4,6 @@
   "description": "Simple npm scripts and packages to help automate some actions",
   "main": "converter.js",
   "scripts": {
-    "postinstall": "npm run processData && npm run compileTemplates",
     "processData": "node tools/dataProcessor.js",
     "compileTemplates": "handlebars templates/ -f src/templates.js"
   },

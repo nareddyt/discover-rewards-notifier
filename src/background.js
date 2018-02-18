@@ -40,8 +40,6 @@ function onTabUpdated(tabId, changeInfo, tab) {
     // Hide page icon and set title
     console.info(tabId, 'Hiding page action');
     chrome.pageAction.hide(tabId);
-
-    // console.info(tabId, 'Setting default title');
     chrome.pageAction.setTitle({
       tabId: tabId,
       title: 'No Discover Deals'
@@ -60,8 +58,6 @@ function onTabUpdated(tabId, changeInfo, tab) {
   // Enable page action and set title
   // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
-
-  // console.info(tabId, 'Setting title');
   chrome.pageAction.setTitle({
     tabId: tabId,
     title: 'Click to view Discover Deal!'
@@ -104,12 +100,11 @@ function fetchJSONFile(path, callback) {
   httpRequest.send();
 }
 
-module.exports = {
-  getLatestTabId: function () {
-    return latestTabId;
-  },
 
-  getEnabledTabs: function () {
-    return enabledTabs;
-  }
-};
+function getLatestTabId() {
+  return latestTabId;
+}
+
+function getEnabledTabs() {
+  return enabledTabs;
+}
