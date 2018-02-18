@@ -1,30 +1,25 @@
 // This is a ES6 node.js script! Please install dependencies from package.json
+// TODO description
+
+const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
+const DEAL_INPUT_FILE = '../data/deals_02-13-2018.html';
+const DEAL_OUTPUT_FILE = '../data/deals.json';
+const CASHBACK_INPUT_FOLDER = '../data/cashbacks_02-18-2018/';
+const CASHBACK_OUTPUT_FILE = '../data/cashbacks.json';
 
 let fs = require('fs');
-let xml_lines = fs.readFileSync('../data/deals_02-13-2018.html').toString().split("\n");
-let google = require('google');
-let randomUserAgent = require('random-useragent');
+let xml_lines = fs.readFileSync(DEAL_INPUT_FILE).toString().split("\n");
 let decode = require('unescape');
 let jsonfile = require('jsonfile');
 const { URL } = require('url');
-
+let google = require('google');
 google.resultsPerPage = 10;
-/**
- * Helps prevent Google's bot detection :)
- */
-function setUserAgent() {
-  // google.requestOptions = {
-  //   headers: {
-  //     'User-Agent': randomUserAgent.getRandom()
-  //   }
-  // };
-}
 
-const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
-const DEAL_OUTPUT_FILE = '../data/deals.json';
-
+// Holds processed data
 let deals = [];
+let cashbacks = [];
 
+// Deals: HTML -> JSON
 for (let i = 0; i < xml_lines.length; i++) {
   let xml_line = xml_lines[i];
 
@@ -40,6 +35,7 @@ for (let i = 0; i < xml_lines.length; i++) {
   deals.push(deal);
 }
 
+// Google search hostnames for all deals
 let index = 0;
 googleSearch(deals[index].site_name);
 
@@ -82,6 +78,7 @@ function googleSearch(input) {
   });
 }
 
+// Deals: Write to json
 function saveData() {
   jsonfile.writeFile(DEAL_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
     if (err) {

@@ -1,0 +1,10 @@
+{
+  "site_name": "Store name here: American Eagle",
+  "site_url": "Website hostname here: www.ae.com",
+  "cashback_url": "Absolute path to specific cashback offer: TODO",
+  "img_src_url": "Absolute url to the image associated with the deal: TODO",
+  "offers": [
+    "$20 for $25",
+    "$40 for $50"
+  ]
+}
