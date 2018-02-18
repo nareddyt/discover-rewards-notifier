@@ -34,24 +34,36 @@ function onTabUpdated(tabId, changeInfo, tab) {
 
     // If tab is enabled
     // Hide page icon
-    // Hide popup (title for now)
-    // Remove from enabled
-    if (enabledTabs[tabId]) {
-      console.info(tabId, 'Hiding page action');
-      chrome.pageAction.hide(tabId);
+    // FIXME Hide popup (title for now)
+    // TODO send message
+    // Remove from enabled FIXME on response
 
-      // console.info(tabId, 'Setting default title');
-      chrome.pageAction.setTitle({
-        tabId: tabId,
-        title: 'No Discover Deal for this page'
-      });
+    if (!enabledTabs[tabId]) {
+      return;
+    }
+    console.info(tabId, 'Hiding page action');
+    chrome.pageAction.hide(tabId);
+
+    // console.info(tabId, 'Setting default title');
+    chrome.pageAction.setTitle({
+      tabId: tabId,
+      title: 'No Discover Deals'
+    });
+
+    let msg = {
+      tabId: tabId,
+      deal: null
+    };
+    chrome.runtime.sendMessage(undefined, msg, undefined, function(res) {
+      if (!res) {
+        console.error(tabId, 'No response after removing deal');
+        return;
+      }
 
       // console.info(tabId, 'Removing', tabId, 'from enabledTabs');
       delete enabledTabs[tabId];
       console.debug(enabledTabs);
-
-      return;
-    }
+    });
 
     return;
   }
@@ -59,8 +71,9 @@ function onTabUpdated(tabId, changeInfo, tab) {
   console.log(tabId, new_url, 'has deal', deal);
 
   // Enable page action
-  // Set popup (title for now)
-  // Add to enabled
+  // FIXME Set popup (title for now)
+  // TODO Send message
+  // Add to enabled TODO on response
 
   // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
@@ -68,12 +81,23 @@ function onTabUpdated(tabId, changeInfo, tab) {
   // console.info(tabId, 'Setting title');
   chrome.pageAction.setTitle({
     tabId: tabId,
-    title: deal.title
+    title: 'Click to view Discover Deal!'
   });
 
-  // console.info(tabId, 'Adding', tabId, 'to enabledTabs');
-  enabledTabs[tabId] = deal;
-  console.debug(enabledTabs);
+  let msg = {
+    tabId: tabId,
+    deal: deal
+  };
+  chrome.runtime.sendMessage(undefined, msg, undefined, function(res) {
+    if (!res) {
+      console.error(tabId, 'No response after sending deal');
+      return;
+    }
+
+    // console.info(tabId, 'Adding', tabId, 'to enabledTabs');
+    enabledTabs[tabId] = deal;
+    console.debug(enabledTabs);
+  });
 }
 
 /**

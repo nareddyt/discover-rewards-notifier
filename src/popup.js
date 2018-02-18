@@ -1,11 +1,13 @@
 
-function createHtml() {
-  let template = Handlebars.templates['deal'];
-  let deal = {
-    title: 'Teju Test Deal'
-  };
-  let html = template(deal);
-  document.body.innerHTML = html;
-}
+chrome.extension.onMessage.addListener(function(message, messageSender, sendResponse) {
+  // message is the message you sent, probably an object
+  // messageSender is an object that contains info about the context that sent the message
+  // sendResponse is a function to run when you have a response
 
-window.onload = createHtml;
+  alert(message.deal);
+});
+
+function createHtml(deal) {
+  let template = Handlebars.templates['deal'];
+  document.body.innerHTML = template(deal);
+}
