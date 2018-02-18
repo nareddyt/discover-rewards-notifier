@@ -1,13 +1,17 @@
 
-chrome.extension.onMessage.addListener(function(message, messageSender, sendResponse) {
-  // message is the message you sent, probably an object
-  // messageSender is an object that contains info about the context that sent the message
-  // sendResponse is a function to run when you have a response
+function fetchDeal() {
+  let tabId = chrome.extension.getBackgroundPage().getLatestTabId();
+  let enabledTabs = chrome.extension.getBackgroundPage().getEnabledTabs();
+  console.info('Popup for tab', tabId);
+  console.debug(enabledTabs);
 
-  alert(message.deal);
-});
+  let deal = enabledTabs[tabId];
+  createHtml(deal);
+}
 
 function createHtml(deal) {
   let template = Handlebars.templates['deal'];
   document.body.innerHTML = template(deal);
 }
+
+window.onload = fetchDeal;

@@ -2,6 +2,7 @@
 const LATEST_DATA_PATH = '../data/latest_data.json';
 let deals = null;
 let enabledTabs = {};
+let latestTabId = null;
 
 fetchJSONFile(LATEST_DATA_PATH, function (data) {
   deals = data;
@@ -32,15 +33,11 @@ function onTabUpdated(tabId, changeInfo, tab) {
   if (!deal) {
     // console.debug(tabId, new_url, 'has no deals');
 
-    // If tab is enabled
-    // Hide page icon
-    // FIXME Hide popup (title for now)
-    // TODO send message
-    // Remove from enabled FIXME on response
-
     if (!enabledTabs[tabId]) {
       return;
     }
+
+    // Hide page icon and set title
     console.info(tabId, 'Hiding page action');
     chrome.pageAction.hide(tabId);
 
@@ -50,31 +47,17 @@ function onTabUpdated(tabId, changeInfo, tab) {
       title: 'No Discover Deals'
     });
 
-    let msg = {
-      tabId: tabId,
-      deal: null
-    };
-    chrome.runtime.sendMessage(undefined, msg, undefined, function(res) {
-      if (!res) {
-        console.error(tabId, 'No response after removing deal');
-        return;
-      }
-
-      // console.info(tabId, 'Removing', tabId, 'from enabledTabs');
-      delete enabledTabs[tabId];
-      console.debug(enabledTabs);
-    });
+    // Remove from enabled
+    // console.info(tabId, 'Removing', tabId, 'from enabledTabs');
+    delete enabledTabs[tabId];
+    console.debug(enabledTabs);
 
     return;
   }
 
   console.log(tabId, new_url, 'has deal', deal);
 
-  // Enable page action
-  // FIXME Set popup (title for now)
-  // TODO Send message
-  // Add to enabled TODO on response
-
+  // Enable page action and set title
   // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
 
@@ -84,20 +67,11 @@ function onTabUpdated(tabId, changeInfo, tab) {
     title: 'Click to view Discover Deal!'
   });
 
-  let msg = {
-    tabId: tabId,
-    deal: deal
-  };
-  chrome.runtime.sendMessage(undefined, msg, undefined, function(res) {
-    if (!res) {
-      console.error(tabId, 'No response after sending deal');
-      return;
-    }
-
-    // console.info(tabId, 'Adding', tabId, 'to enabledTabs');
-    enabledTabs[tabId] = deal;
-    console.debug(enabledTabs);
-  });
+  // Add to enabled
+  // console.info(tabId, 'Adding', tabId, 'to enabledTabs');
+  latestTabId = tabId;
+  enabledTabs[tabId] = deal;
+  console.debug(enabledTabs);
 }
 
 /**
@@ -129,3 +103,13 @@ function fetchJSONFile(path, callback) {
   httpRequest.open('GET', path);
   httpRequest.send();
 }
+
+module.exports = {
+  getLatestTabId: function () {
+    return latestTabId;
+  },
+
+  getEnabledTabs: function () {
+    return enabledTabs;
+  }
+};
