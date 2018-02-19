@@ -7,10 +7,16 @@ const DEAL_OUTPUT_FILE = '../data/deals.json';
 const CASHBACK_INPUT_FOLDER = '../data/cashbacks_02-18-2018/';
 const CASHBACK_OUTPUT_FILE = '../data/cashbacks.json';
 
+let argv = require('yargs')
+  .alias('c', 'cashback')
+  .alias('d', 'deal')
+  .usage('Usage: $0 <--cashback> or <--deal>')
+  .argv;
+
 let fs = require('fs');
 let decode = require('unescape');
 let jsonfile = require('jsonfile');
-const { URL, URLSearchParams } = require('url');
+const { URL } = require('url');
 let cheerio = require('cheerio');
 let google = require('google');
 google.resultsPerPage = 10;
@@ -18,6 +24,15 @@ google.resultsPerPage = 10;
 // Holds processed data
 let deals = [];
 let cashbacks = [];
+
+if (argv.deal) {
+  parseDeals();
+} else if (argv.cashback) {
+  parseCashbacks();
+} else {
+  console.error('Unexpected args', argv);
+  process.exit(1);
+}
 
 function parseCashbacks() {
 // Read cashback HTMLs from folder
@@ -75,6 +90,26 @@ function parseCashbacks() {
       });
     }
   });
+
+  // We now have all the cashbacks, need to google for host names
+  let index = 0;
+  googleSearch(cashbacks[index].site_name, onGoogleCashback);
+
+  function onGoogleCashback(url) {
+
+    // Store the site url
+    cashbacks[index].site_url = url;
+    index++;
+
+    if (index === cashbacks.length) {
+      // We have finished googling, save all cashbacks!
+      saveCashbacksData();
+      return;
+    }
+
+    // Keep googling
+    googleSearch(cashbacks[index].site_name, onGoogleCashback);
+  }
 }
 
 
@@ -99,19 +134,25 @@ function parseDeals() {
     deals.push(deal);
   }
 
+  // We now have all the deals, need to google for the hostnames
   let index = 0;
+  googleSearch(deals[index].site_name, onGoogleDeal);
 
-  // Google search hostnames for all deals
-  googleSearch(deals[index].site_name, function(url) {
+  function onGoogleDeal (url) {
+
+    // Store the site url
     deals[index].site_url = url;
-
     index++;
+
     if (index === deals.length) {
-      saveData();
-    } else {
-      googleSearch(deals[index].site_name);
+      // We have finished googling, save all deals!
+      saveDealsData();
+      return;
     }
-  });
+
+    // Keep googling
+    googleSearch(deals[index].site_name, onGoogleDeal);
+  }
 
 }
 
@@ -148,8 +189,17 @@ function googleSearch(input, callback) {
 }
 
 // Deals: Write to json
-function saveData() {
+function saveDealsData() {
   jsonfile.writeFile(DEAL_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
+    if (err) {
+      console.error(err);
+    }
+  })
+}
+
+// Cashbacks: Write to json
+function saveCashbacksData() {
+  jsonfile.writeFile(CASHBACK_OUTPUT_FILE, cashbacks, {spaces: 2}, function (err) {
     if (err) {
       console.error(err);
     }
