@@ -1,5 +1,21 @@
-// This is a ES6 node.js script! Please install dependencies from package.json
-// TODO description
+/**
+ * This script is used to transform Deals and Cashback data from HTML into JSON.
+ * This makes it easier for the actual extension to use and render the data.
+ *
+ * Additionally, this script attaches a URL to each deal and cashback.
+ * This makes it easy for the extension to determine which sites qualify for a deal / cashback!
+ *
+ * The HTMLs from Discover's website are located in the `../data` folder.
+ * The processed JSONs (cashbacks.json and deals.json) are also located there.
+ * Files labelled *single_schema.json` in that directory explain the json fields.
+ *
+ * NOTE this is a ES6 node.js script.
+ * NOTE you must install the devDependencies from `../package.json`.
+ * NOTE this script is not used by the extension in any way. Instead, developers run this script
+ *      to transform the data. The extension only uses the transformed data!
+ *
+ * @author Tejasvi Nareddy
+ */
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
 const DEAL_INPUT_FILE = '../data/deals_02-13-2018.html';
