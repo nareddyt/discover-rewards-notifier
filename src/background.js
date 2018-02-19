@@ -38,7 +38,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
   // console.log(tabId, 'New url:', new_url);
 
   let items = getItemsForUrl(new_url);
-  if (!items) {
+  if (items.length === 0) {
     // console.debug(tabId, new_url, 'has no deals');
 
     if (!getEnabledItems(tabId)) {
