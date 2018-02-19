@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme",
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "google": "^2.1.0",
     "jsonfile": "^4.0.0",
     "random-useragent": "^0.3.1",
