@@ -1,10 +1,11 @@
 {
   "name": "discover-deals-tools",
   "version": "1.0.0",
-  "description": "Simple npm scripts and packages to help automate some actions",
+  "description": "Simple npm scripts and packages to help automate some actions. NOT USED by the extension during runtime.",
   "main": "converter.js",
   "scripts": {
-    "processData": "node tools/dataProcessor.js",
+    "updateDeal": "node tools/dataProcessor.js --deal",
+    "updateCashback": "node tools/dataProcessor.js --cashback",
     "compileTemplates": "handlebars templates/ -f src/templates.js"
   },
   "repository": {
