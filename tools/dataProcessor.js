@@ -46,19 +46,13 @@ function parseCashbacks() {
 
     let items = $('div[class=items]');
 
-    console.log('Finding normal items');
-    let rowsNormal = items.find('div[class=item-row]');
-    rowsNormal.each(function (index, row) {
+    let rows = items.find('div[class=item-row]');
+    rows.each(function (index, row) {
       let items = $(row).find('div[class=rfy-item]');
-      console.log('Found', items.length, 'items');
       parseItems(items);
     });
-
-    console.log('Finding special items');
-    let rowsSpecial = items.find('div[class=item-row]');
-    rowsSpecial.each(function (index, row) {
+    rows.each(function (index, row) {
       let items = $(row).find('div[class="rfy-item specialBackground"]');
-      console.log('Found', items.length, 'items');
       parseItems(items);
     });
 
