@@ -11,17 +11,29 @@ function fetchDeal() {
     let tabId = tab.id;
     console.info('Popup for tab', tabId);
 
-    let enabledTabs = chrome.extension.getBackgroundPage().getEnabledTabs();
-    console.debug('Popup got', enabledTabs);
+    let enabledItems = chrome.extension.getBackgroundPage().getEnabledItems(tabId);
+    console.debug('Popup got', enabledItems);
 
-    let deal = enabledTabs[tabId];
-    createHtml(deal);
+    createHtml(enabledItems);
   });
 }
 
-function createHtml(deal) {
-  let template = Handlebars.templates['deal'];
-  document.body.innerHTML = template(deal);
+function createHtml(items) {
+  let dealTemplate = Handlebars.templates['deal'];
+  let cashbackTemplate = Handlebars.templates['cashback'];
+
+  items.forEach(function (item) {
+    let type = item.type;
+
+    if (type === 'deal') {
+      document.body.innerHTML += dealTemplate(item);
+    } else if (type === 'cashback') {
+      document.body.innerHTML += cashbackTemplate(item);
+    } else {
+      console.error('Unsupported type', type);
+    }
+  });
+
 }
 
 window.onload = fetchDeal;
