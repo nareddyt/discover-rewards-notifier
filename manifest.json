@@ -1,6 +1,6 @@
 {
-  "name": "Discover Deals Notifier",
-  "version": "2.0",
+  "name": "Discover Deals and Cashback Rewards Notifier",
+  "version": "3.2",
   "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
   "background": {
     "scripts": [
