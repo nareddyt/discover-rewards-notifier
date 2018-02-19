@@ -16,6 +16,6 @@ templates['deal'] = template({"compiler":[7,">= 4.0.0"],"main":function(containe
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "</h1>\r\n<a href="
     + alias4(((helper = (helper = helpers.deal_url || (depth0 != null ? depth0.deal_url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"deal_url","hash":{},"data":data}) : helper)))
-    + " target=\"_blank\">FIXME Click here to view deal (you must login to Discover first)</a>\r\n";
+    + " target=\"_blank\">Click here to view deal (you must login to Discover first)</a>\r\n";
 },"useData":true});
 })();

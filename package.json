@@ -6,7 +6,8 @@
   "scripts": {
     "updateDeal": "node tools/dataProcessor.js --deal",
     "updateCashback": "node tools/dataProcessor.js --cashback",
-    "compileTemplates": "handlebars templates/ -f src/templates.js"
+    "compileTemplates": "handlebars templates/ -f src/templates.js",
+    "watchTemplates": "handlebars-watch -c ./hbw-config.json"
   },
   "repository": {
     "type": "git",
