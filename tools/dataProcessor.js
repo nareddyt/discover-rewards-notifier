@@ -129,7 +129,7 @@ function googleSearch(input, callback) {
       return;
     }
 
-    while (true) {
+    for (let i = 0; true; i++) {
       let link = res.links[i].href;
 
       if (link) {
