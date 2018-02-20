@@ -1,7 +1,11 @@
 {
   "name": "Discover Deals and Cashback Rewards Notifier",
-  "version": "3.2",
-  "description": "Alerts you when you visit a website that qualifies for a Discover Deal.",
+  "version": "3.3",
+  "description": "Alerts you when you visit a website that qualifies for a Discover Deal or Cashback Reward.",
+  "icons": {
+    "38": "icon/icon-38.png",
+    "512": "icon/icon-512.png"
+  },
   "background": {
     "scripts": [
       "src/background.js"
@@ -10,7 +14,6 @@
   },
   "page_action":
   {
-    "default_icon": "icon/icon-128.png",
     "default_title": "No Discover Deal for this page",
     "default_popup": "src/popup.html"
   },
