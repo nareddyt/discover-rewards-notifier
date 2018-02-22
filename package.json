@@ -1,5 +1,5 @@
 {
-  "name": "discover-deals-tools",
+  "name": "discover-chashback-rewards-tools",
   "version": "1.0.0",
   "description": "Simple npm scripts and packages to help automate some actions. NOT USED by the extension during runtime.",
   "main": "converter.js",
@@ -7,7 +7,7 @@
     "updateDeal": "node tools/dataProcessor.js --deal",
     "updateCashback": "node tools/dataProcessor.js --cashback",
     "compileTemplates": "handlebars templates/ -f src/templates.js",
-    "watchTemplates": "handlebars-watch -c ./hbw-config.json"
+    "watchTemplates": "handlebars-watch -c ./tools/hbw-config.json"
   },
   "repository": {
     "type": "git",

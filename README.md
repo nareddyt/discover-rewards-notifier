@@ -1,3 +1,3 @@
-# Discover Deals and Cashback Rewards Notifier
+# Discover® Deals and Cashback Rewards Notifier
 
 TODO
