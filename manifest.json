@@ -1,7 +1,7 @@
 {
-  "name": "Discover Deals and Cashback Rewards Notifier",
-  "version": "3.3",
-  "description": "Alerts you when you visit a website that qualifies for a Discover Deal or Cashback Reward.",
+  "name": "Discover® Deals and Cashback Rewards Notifier",
+  "version": "3.4",
+  "description": "Alerts you when you visit a website that qualifies for a Discover® Deal or Cashback Reward.",
   "icons": {
     "38": "icon/icon-38.png",
     "512": "icon/icon-512.png"
@@ -20,5 +20,7 @@
   "permissions" : [
     "tabs"
   ],
+  "short_name": "Discover® Rewards Notifier",
+  "offline_enabled": true,
   "manifest_version": 2
 }
