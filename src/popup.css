@@ -1,3 +1,38 @@
 body {
     width: 400px;
 }
+img {
+    max-height: 100px;
+}
+.img-container{
+    text-align: center;
+    height: 100%;
+}
+.item-box {
+    border: 1px solid grey;
+    margin: 10px;
+    padding: 5px 20px 10px;
+    text-align: center;
+}
+.expiry {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    background-color: orange;
+    text-decoration-color: black;
+    font-size: 16px;
+    text-decoration: none;
+
+    border: 0 white;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    padding: 10px 30px 10px;
+    margin-bottom: 5px;
+}

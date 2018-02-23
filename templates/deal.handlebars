@@ -1,6 +1,24 @@
-<h1>{{title}}</h1>
+<div class="item-box">
+    <h1>{{site_name}}</h1>
+    <hr/>
+    <h2>{{title}}</h2>
 
-<a href={{deal_url}} target="_blank">Click here to view deal (you must login to Discover first)</a>
+    <div class="img-container">
+        <img src={{img_src_url}}>
+    </div>
+
+    <a class="button" href={{deal_url}} target="_blank">
+        Go to Deal
+    </a>
+
+    <br/>
+    You must login to <a href="https://www.discover.com" target="_blank">Discover.com</a> first.
+
+</div>
+
+<div class="expiry">
+    {{expiry_date}}
+</div>
 
 <br/>
 <br/>

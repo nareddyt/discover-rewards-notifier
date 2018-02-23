@@ -4,5 +4,5 @@
   "site_url": "Website hostname here: www.ae.com",
   "deal_url": "Absolute path to specific discover deal: https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10653",
   "img_src_url": "Absolute url to the image associated with the deal: https://www.discovercard.com/extras/logo/large/offer_9145_big_01272016.jpg",
-  "expiry_date": "Expiry date for the deal: 12/31/2018, Ongoing"
+  "expiry_date": "Expiry date for the deal: Expires 12/31/2018 OR Ongoing"
 }
