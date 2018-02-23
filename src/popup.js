@@ -22,8 +22,12 @@ function createHtml(items) {
   let dealTemplate = Handlebars.templates['deal'];
   let cashbackTemplate = Handlebars.templates['cashback'];
 
+  let htmls = [];
+
   items.forEach(function (item) {
     let type = item.type;
+
+    let html = "<div></div>";
 
     if (type === 'deal') {
       item.title = item.title.split(",")[0];
@@ -31,13 +35,22 @@ function createHtml(items) {
         item.expiry_date = "No Expiry Date"
       }
 
-      document.body.innerHTML += dealTemplate(item);
+      html = dealTemplate(item);
     } else if (type === 'cashback') {
-      document.body.innerHTML += cashbackTemplate(item);
+      html = cashbackTemplate(item);
     } else {
       console.error('Unsupported type', type);
     }
+
+    htmls.push(html);
   });
+
+  let obj = {
+    items: htmls
+  };
+
+  let mainTemplate = Handlebars.templates['main'];
+  document.body.innerHTML += mainTemplate(obj);
 
 }
 

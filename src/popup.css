@@ -34,3 +34,7 @@ a.button {
     padding: 10px 30px 10px;
     margin-bottom: 5px;
 }
+
+.item {
+    display:inline-block;
+}
