@@ -1,11 +1,23 @@
-<h1>{{site_name}} Cashback Reward</h1>
 
-<h4>Reward Options:</h4>
-<ul>
-    {{#each offers}}<li>{{this}}</li>{{/each}}
-</ul>
+<div class="item-box">
+    <h1>{{site_name}} Cashback Reward</h1>
+    <hr/>
 
-<a href={{cashback_url}} target="_blank">Click here to view cashback (you must login to Discover first)</a>
+    {{#each offers}}<p>{{this}}</p>{{/each}}
 
-<br/>
-<br/>
+    <div class="img-container">
+        <img src={{img_src_url}}>
+    </div>
+
+    <a class="button" href={{cashback_url}} target="_blank">
+        Go to Cashback Reward
+    </a>
+
+    <br/>
+    You must login to <a href="https://www.discover.com" target="_blank">Discover.com</a> first.
+
+</div>
+
+<div class="expiry">
+    No Expiry Date
+</div>
