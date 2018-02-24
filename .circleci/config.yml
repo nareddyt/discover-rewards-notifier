@@ -32,7 +32,7 @@ jobs:
       - run:
           name: "Install Dependencies"
           command: |
-            sudo apt install tree
+            apt install tree
       - run:
           name: "Run Tests"
           command: echo "Run any tests here."
