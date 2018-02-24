@@ -36,6 +36,11 @@ jobs:
           name: "Run Tests"
           command: echo "Run any tests here."
       - run:
+          name: "Make Extension Production Ready"
+          command: |
+            chmod +x ./.circleci/prod-ready.sh
+            bash ./.circleci/prod-ready.sh
+      - run:
           name: "Package Extension"
           command: git archive -o extension.zip HEAD
       # Use workspaces to move files between `build` and `publish`
