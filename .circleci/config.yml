@@ -1,11 +1,16 @@
+# Note that all secrets are stored on the CircleCI server. They will not appear in this file.
+
+# Details when the `build` and `publish` steps will be run
 workflows:
   version: 2
   main:
     jobs:
+      # Always `build` any commits
       - build:
           filters:
             tags:
               only: /.*/
+      # Only `publish` commits that have a git release label!
       - publish:
           requires:
             - build
@@ -18,6 +23,7 @@ workflows:
 
 version: 2
 jobs:
+  # The `build` step that's referenced above
   build:
     docker:
       - image: cibuilds/chrome-extension:latest
@@ -32,19 +38,24 @@ jobs:
       - run:
           name: "Package Extension"
           command: git archive -o extension.zip HEAD
+      # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
           paths:
             - extension.zip
 
+  # The `published` step that's referenced above
   publish:
     docker:
       - image: cibuilds/chrome-extension:latest
     environment:
+      # Not a secret :)
       - APP_ID: ndgeljpfnjlnmbgekhjkchhhgoiipnfi
     steps:
       - attach_workspace:
           at: /root/workspace
       - run:
           name: "Publish to the Google Chrome Store"
+          # Note this publish command is built into the custom docker image
+          # https://github.com/cibuilds/chrome-extension
           command: publish /root/workspace/extension.zip
