@@ -50,7 +50,7 @@ jobs:
             cat manifest.json
       - run:
           name: "Package Extension"
-          command: zip -r extension.zip . -x \*.git/\* -x \*node_modules/\* -x \*.idea/\*
+          command: zip -r extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
@@ -71,4 +71,6 @@ jobs:
           name: "Publish to the Google Chrome Store"
           # Note this publish command is built into the custom docker image
           # https://github.com/cibuilds/chrome-extension
-          command: publish /root/workspace/extension.zip
+          command: |
+            set -eo pipefail
+            publish /root/workspace/extension.zip
