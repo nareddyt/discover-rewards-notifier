@@ -34,6 +34,7 @@ jobs:
           command: |
             apk update
             apk add tree
+            apk add zip
       - run:
           name: "Run Tests"
           command: echo "Run any tests here."
@@ -49,7 +50,7 @@ jobs:
             cat manifest.json
       - run:
           name: "Package Extension"
-          command: git archive -o extension.zip HEAD
+          command: zip -r extension.zip . -x \*.git/\* -x \*node_modules/\* -x \*.idea/\*
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project

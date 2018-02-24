@@ -30,3 +30,4 @@ fabric.properties
 .idea/
 node_modules/
 build/
+extension.zip
