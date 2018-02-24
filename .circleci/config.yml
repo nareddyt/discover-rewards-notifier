@@ -44,7 +44,9 @@ jobs:
             bash ./.circleci/prod-ready.sh
       - run:
           name: "List All Files"
-          command: tree -a -I 'node_modules|.git|.idea'
+          command: |
+            tree -a -I 'node_modules|.git|.idea'
+            cat manifest.json
       - run:
           name: "Package Extension"
           command: git archive -o extension.zip HEAD
