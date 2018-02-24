@@ -31,7 +31,8 @@ jobs:
       - checkout
       - run:
           name: "Install Dependencies"
-          command: echo "You can also install Yarn, NPM, or anything else you need to use to build and test your extension."
+          command: |
+            sudo apt install tree
       - run:
           name: "Run Tests"
           command: echo "Run any tests here."
@@ -40,6 +41,9 @@ jobs:
           command: |
             chmod +x ./.circleci/prod-ready.sh
             bash ./.circleci/prod-ready.sh
+      - run:
+          name: "List All Files"
+          command: tree -I 'node_modules'
       - run:
           name: "Package Extension"
           command: git archive -o extension.zip HEAD
