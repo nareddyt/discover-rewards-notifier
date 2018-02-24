@@ -1,6 +1,7 @@
 {
   "name": "Discover® Deals and Cashback Rewards Notifier",
-  "version": "4.1",
+  "version": "0.0",
+  "version_name": "dev-build: If you are not a developer, you shouldn't see this message! Note that during Continuous Deployment, CircleCI automatically replaces the `version` and `version_name` fields with the latest git tag. This allows us to deploy the latest changes by just making a release on GitHub.",
   "description": "Shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards!",
   "icons": {
     "38": "icon/icon-38.png",
