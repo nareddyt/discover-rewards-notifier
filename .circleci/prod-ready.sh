@@ -6,7 +6,8 @@
 # If you do edit on Windows, use `dos2unix` before you commit.
 
 # If there is no tag, the script will have non-0 exit code
-GIT_TAG=$(git describe --exact-match --tags HEAD)
+#GIT_TAG=$(git describe --exact-match --tags HEAD)
+GIT_TAG="v0.0.0.1"
 if [ ! $? -eq 0 ]; then
   echo "This commit doesn't have a tag, skip setting the version."
   exit 0
@@ -20,3 +21,15 @@ echo "Version set to $(jq '.version' ./manifest.json)"
 
 jq '.version_name = '"\"${GIT_TAG}\"" ./manifest.json | sponge ./manifest.json
 echo "Version Name set to $(jq '.version_name' ./manifest.json)"
+
+DEV_ICON_38=$(jq '.icons["38"]' ./manifest.json)
+ICON_38=${DEV_ICON_38:10}
+PROD_ICON_38="icon/prod-${ICON_38}"
+jq '.icons["38"] = '"\"${PROD_ICON_38}" ./manifest.json | sponge ./manifest.json
+echo "Icon 38 set to $(jq '.icons["38"]' ./manifest.json)"
+
+DEV_ICON_512=$(jq '.icons["512"]' ./manifest.json)
+ICON_512=${DEV_ICON_512:10}
+PROD_ICON_512="icon/prod-${ICON_512}"
+jq '.icons["512"] = '"\"${PROD_ICON_512}" ./manifest.json | sponge ./manifest.json
+echo "Icon 512 set to $(jq '.icons["512"]' ./manifest.json)"
