@@ -6,8 +6,7 @@
 # If you do edit on Windows, use `dos2unix` before you commit.
 
 # If there is no tag, the script will have non-0 exit code
-#GIT_TAG=$(git describe --exact-match --tags HEAD)
-GIT_TAG="v0.0.0.1"
+GIT_TAG=$(git describe --exact-match --tags HEAD)
 if [ ! $? -eq 0 ]; then
   echo "This commit doesn't have a tag, skip setting the version."
   exit 0
