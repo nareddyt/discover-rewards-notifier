@@ -4,7 +4,6 @@ const DEAL_DATA_PATH = '../data/deals.json';
 
 let cashbacks = null;
 let deals = null;
-let enabledCashbacks = {};
 let enabledItems = {};
 
 fetchJSONFile(CASHBACK_DATA_PATH, function (data) {
@@ -24,17 +23,20 @@ function onTabRemoved(tabId, removeInfo) {
 }
 
 function onTabUpdated(tabId, changeInfo, tab) {
+  // console.debug(tabId, changeInfo, tab);
+
   if (!cashbacks || !deals) {
-    // console.warn(tabId, 'Waiting for discover deals and cashback rewards to load');
+    console.error(tabId, 'Discover deals or cashback rewards have not loaded properly');
     return;
   }
 
-  if (!changeInfo.url) {
-    // console.debug(tabId, 'Something other than the URL changed');
+  // Only check the tab's url if the page is loading
+  if (changeInfo.status !== "loading") {
     return;
   }
 
-  let new_url = changeInfo.url;
+  // FIXME loading this each time might be inefficient. Could try caching the results
+  let new_url = tab.url;
   // console.log(tabId, 'New url:', new_url);
 
   let items = getItemsForUrl(new_url);
@@ -42,6 +44,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
     // console.debug(tabId, new_url, 'has no deals');
 
     if (!getEnabledItems(tabId)) {
+      // Page action for tab was already inactive, no need to do anything
       return;
     }
 
