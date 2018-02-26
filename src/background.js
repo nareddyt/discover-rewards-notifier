@@ -36,10 +36,10 @@ function onTabUpdated(tabId, changeInfo, tab) {
   }
 
   // FIXME loading this each time might be inefficient. Could try caching the results
-  let new_url = tab.url;
+  let newUrl = tab.url;
   // console.log(tabId, 'New url:', new_url);
 
-  let items = getItemsForUrl(new_url);
+  let items = getItemsForUrl(newUrl);
   if (items.length === 0) {
     // console.debug(tabId, new_url, 'has no deals');
 
@@ -64,7 +64,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
     return;
   }
 
-  console.log(tabId, new_url, 'has items', items);
+  console.log(tabId, newUrl, 'has items', items);
 
   // Enable page action and set title
   // console.info(tabId, 'Showing page action');
