@@ -35,6 +35,12 @@ jobs:
             apk update
             apk add tree
             apk add zip
+            ask add npm
+      - run:
+          name: "Build"
+          command: |
+            echo "Compiling handlebars templates..."
+            npm run compileTemplates
       - run:
           name: "Run Tests"
           command: echo "Run any tests here."
@@ -44,10 +50,11 @@ jobs:
             chmod +x ./.circleci/prod-ready.sh
             bash ./.circleci/prod-ready.sh
       - run:
-          name: "List All Files"
-          command: |
-            tree -a -I 'node_modules|.git|.idea'
-            cat manifest.json
+          name: "Debug: List All Files"
+          command: tree -a -I 'node_modules|.git|.idea'
+      - run:
+          name: "Debug: Print Prod-Ready Manifest"
+          command: cat manifest.json
       - run:
           name: "Package Extension"
           command: zip -r build/extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
