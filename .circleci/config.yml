@@ -35,7 +35,7 @@ jobs:
             apk update
             apk add tree
             apk add zip
-            apk add npm
+            apk add nodejs
       - run:
           name: "Build"
           command: |
