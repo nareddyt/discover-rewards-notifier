@@ -1,5 +1,4 @@
 .idea/
 node_modules/
 build/
-extension.zip
 src/templates.js

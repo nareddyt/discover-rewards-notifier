@@ -50,12 +50,12 @@ jobs:
             cat manifest.json
       - run:
           name: "Package Extension"
-          command: zip -r extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
+          command: zip -r build/extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
           paths:
-            - extension.zip
+            - build/extension.zip
 
   # The `published` step that's referenced above
   publish:
@@ -73,4 +73,4 @@ jobs:
           # https://github.com/cibuilds/chrome-extension
           command: |
             set -eo pipefail
-            publish /root/workspace/extension.zip
+            publish /root/workspace/build/extension.zip
