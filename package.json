@@ -19,12 +19,10 @@
     "url": "https://github.com/nareddyt/discover-deals-notifier-extension/issues"
   },
   "homepage": "https://github.com/nareddyt/discover-deals-notifier-extension#readme",
-  "dependencies": {
-    "handlebars": "^4.0.11"
-  },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "google": "^2.1.0",
+    "handlebars": "^4.0.11",
     "jsonfile": "^4.0.0",
     "random-useragent": "^0.3.1",
     "unescape": "^1.0.1",
