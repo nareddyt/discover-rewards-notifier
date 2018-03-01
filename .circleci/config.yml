@@ -55,7 +55,7 @@ jobs:
           command: cat manifest.json
       - run:
           name: "Package Extension"
-          command: zip -r build/extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
+          command: zip -r extension.zip ./build/ -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
