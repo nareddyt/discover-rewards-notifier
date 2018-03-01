@@ -36,14 +36,12 @@ jobs:
             apk add tree
             apk add zip
             apk add nodejs-npm
+            npm install
       - run:
           name: "Build"
           command: |
             echo "Compiling handlebars templates..."
             npm run compileTemplates
-      - run:
-          name: "Run Tests"
-          command: echo "Run any tests here."
       - run:
           name: "Make Extension Production Ready"
           command: |
