@@ -57,6 +57,7 @@ jobs:
           name: "Package Extension"
           command: |
             zip -r extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
+            mkdir ./build
             cp extension.zip ./build/extension.zip
             rm extension.zip
       # Use workspaces to move files between `build` and `publish`
