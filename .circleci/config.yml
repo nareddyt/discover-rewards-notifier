@@ -82,4 +82,5 @@ jobs:
           # https://github.com/cibuilds/chrome-extension
           command: |
             set -eo pipefail
-            publish /root/workspace/build/extension.zip
+            chmod +x ./.circleci/publish-extension.sh
+            bash ./.circleci/publish-extension.sh /root/workspace/build/extension.zip
