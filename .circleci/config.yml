@@ -65,6 +65,7 @@ jobs:
           root: /root/project
           paths:
             - build
+            - .circleci
 
   # The `published` step that's referenced above
   publish:
@@ -78,9 +79,7 @@ jobs:
           at: /root/workspace
       - run:
           name: "Publish to the Google Chrome Store"
-          # Note this publish command is built into the custom docker image
-          # https://github.com/cibuilds/chrome-extension
           command: |
             set -eo pipefail
-            chmod +x ./.circleci/publish-extension.sh
-            bash ./.circleci/publish-extension.sh /root/workspace/build/extension.zip
+            chmod +x /root/workspace/.circleci/publish-extension.sh
+            bash /root/workspace/.circleci/publish-extension.sh /root/workspace/build/extension.zip
