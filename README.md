@@ -1,4 +1,6 @@
-# Discover® Deals and Cashback Rewards Notifier ![Icon](icon/store-icon-128-border.png?raw=true)
+<img src="icon/store-icon-128-border.png" align="right" />
+
+# Discover® Deals and Cashback Rewards Notifier
 
 [![CircleCI Build](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master.svg?style=svg)](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c196a657cab442c98672c7b52fafe1f9)](https://www.codacy.com/app/nareddyt/discover-rewards-notifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nareddyt/discover-rewards-notifier&amp;utm_campaign=Badge_Grade)
