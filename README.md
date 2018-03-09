@@ -53,7 +53,7 @@ npm run compileTemplates
 
 #### Load the extension in your `Chrome Web Browser`
 
-The extension is now fully-built and ready. Follow this short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked):
+The extension is now fully-built and ready. Follow the short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked) under the **Load the extension** section.
 
 **Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production extension and the developers' custom builds.
 
