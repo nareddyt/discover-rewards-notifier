@@ -1,4 +1,4 @@
-<img src="icon/store-icon-128-border.png" align="right" />
+<img src="icon/store-icon-128-border.png" align="right" alt="Chrome Web Store Icon" />
 
 # Discover® Deals and Cashback Rewards Notifier
 
@@ -8,7 +8,7 @@
 
 A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards! The intended end-users are customers of [Discover® Card](https://www.discover.com/).
 
-<img src="img/screenshots/jcrew.jpg" align="center" />
+<img src="img/screenshots/jcrew.jpg" align="center" width="654" height="450" alt="Screenshot of extension in use" />
 
 ## Getting Started
 
