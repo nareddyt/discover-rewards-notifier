@@ -8,6 +8,8 @@
 
 A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards! The intended end-users are customers of [Discover® Card](https://www.discover.com/).
 
+<img src="img/screenshots/jcrew.jpg" align="center" />
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
