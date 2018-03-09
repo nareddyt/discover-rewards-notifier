@@ -15,6 +15,8 @@ A Chrome Extension that shows a notification when visiting sites that qualify fo
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+The extension comes with the latest Discover® Deals and Cashback Rewards data, so you don't have to download those manually.
+
 TODO see other sections for notes on TODO
 
 ### Prerequisites
@@ -55,25 +57,25 @@ The extension is now fully-built and ready. Follow this short list of steps from
 
 **Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production extension and the developers' custom builds.
 
-## Running the tests
+## Testing the build
 
-Explain how to run the automated tests for this system
+We have no automated tests yet :)
 
-### Break down into end to end tests
+### Manual testing
 
-Explain what these tests test and why
+Ensure you can view deals and cashback rewards on various sites.
+Using your `Chrome Web Browser`, go to various retailers to see if the extension recognizes the deal or cashback reward.
 
-```
-Give an example
-```
+Look through `data/deals.json` and `data/cashbacks.json` and ensure that the extension properly displays offers for at least 5 of the sites.
 
-### And coding style tests
+Try finding a site that has both a deal and a cashback reward. Ensure the extension displays both of them.
 
-Explain what these tests test and why
+### Codacy
 
-```
-Give an example
-```
+We use Codacy to check coding style. Codacy automatically runs everytime a pull request is submitted.
+The Codacy Bot will comment on any code that doesn't match the style guide.
+
+Sometimes it will be very picky, so feel free to only fix the most obvious style-errors it finds.
 
 ## Deployment
 
