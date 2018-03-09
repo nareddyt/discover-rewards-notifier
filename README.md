@@ -72,20 +72,23 @@ Try finding a site that has both a deal and a cashback reward. Ensure the extens
 
 ### Codacy
 
-We use Codacy to check coding style. Codacy automatically runs everytime a pull request is submitted.
+We use Codacy to check code style. Codacy automatically runs every time a pull request is submitted.
 The Codacy Bot will comment on any code that doesn't match the style guide.
 
-Sometimes it will be very picky, so feel free to only fix the most obvious style-errors it finds.
+Sometimes it will be very picky, so feel free to only fix the most obvious errors it finds.
+
+## Updating the data
+
+TODO
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+TODO
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [npm](https://www.npmjs.com/) - Developer dependency management
+* [CircleCI](https://circleci.com/) - Continuous Delivery
 
 ## Contributing
 
@@ -93,20 +96,20 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [releases for this repository](https://github.com/nareddyt/discover-deals-notifier-extension/releases).
+
+**Note:** Anytime a release is created, CircleCI automatically deploys the corresponding code to the Chrome Web Store.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Tejasvi Nareddy** - *Creator and Maintainer* - [nareddyt](https://github.com/nareddyt)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+See the [ACKNOWLEDGMENTS](ACKNOWLEDGMENTS) file for details
