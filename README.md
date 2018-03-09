@@ -14,33 +14,46 @@ A Chrome Extension that shows a notification when visiting sites that qualify fo
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+TODO see other sections for notes on TODO
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You'll need:
 
-```
-Give examples
-```
+- `git` to clone the repo and make contributions
+- `npm` to compile the UI
+- `Chrome Web Browser` to test the extension
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+#### Clone the repo
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```bash
+git clone https://github.com/nareddyt/discover-rewards-notifier.git
+cd discover-rewards-notifier/
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+#### Install `npm` dependencies
+
+```
+npm install
+```
+
+#### Compile *handlebars templates* using `npm`
+
+[Handlebars](http://handlebarsjs.com/) is a templating engine the extension uses for the UI.
+Note that the previous step automatically installed the handlebars CLI.
+
+```
+npm run compileTemplates
+```
+
+#### Load the extension in your `Chrome Web Browser`
+
+The extension is now fully-built and ready. Follow this short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked):
+
+**Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production extension and the developers' custom builds.
 
 ## Running the tests
 
