@@ -1,3 +1,3 @@
-# Obtaining and Processing the Discover® Data
+# Discover® Data
 
 TODO

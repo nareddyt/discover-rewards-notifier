@@ -19,10 +19,6 @@ The intended end-users are customers of [Discover® Card](https://www.discover.c
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 The extension comes with the latest Discover® Deals and Cashback Rewards data, so you don't have to download those manually.
 
-For information on how the deals and cashback data is obtained and processed, view the **Obtaining and Processing the Data** section.
-
-For information on Continuous Deployment, view the **Continuous Deployment** section.
-
 ### Prerequisites
 
 You'll need:
@@ -58,7 +54,7 @@ npm install
 npm run compileTemplates
 ```
 
-#### Load the extension in Chrome
+### Load the extension in Chrome
 
 The extension is now fully-built and ready to use. It needs to be loaded into the Chrome Web Browser so you can use it.
 
@@ -68,11 +64,27 @@ The extension should work now!
 
 **Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production build and the developers' custom builds.
 
-## Obtaining and Processing the Data
+## Developing
+
+Now that you have the extension setup, follow any one of these guides to learn how specific components work.
+
+**NOTE:** After making changes, you must reload the extension in Chrome. See the following snippet from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked):
+
+> The files are only parsed when the extension is loaded. If you want to see your changes in action, the extension has to be reloaded. Visit the extensions page (go to chrome://extensions, or More Tools > Extensions under the Chrome menu), and click Reload under your extension. All extensions are also reloaded when the extensions page is reloaded, e.g. after hitting F5 or Ctrl-R.
+
+### Discover® Data
 
 See [data/README.md](data/README.md)
 
-## Continuous Deployment
+### UI Content
+
+See [templates/README.md](templates/README.md)
+
+### Javascript and UI Styling
+
+See [src/README.md](src/README.md)
+
+### Continuous Deployment
 
 See [.circleci/README.md](.circleci/README.md)
 
