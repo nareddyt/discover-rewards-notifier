@@ -6,7 +6,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c196a657cab442c98672c7b52fafe1f9)](https://www.codacy.com/app/nareddyt/discover-rewards-notifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nareddyt/discover-rewards-notifier&amp;utm_campaign=Badge_Grade)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
 
-A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards! The intended end-users are customers of [Discover® Card](https://www.discover.com/).
+A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards.
+
+The intended end-users are customers of [Discover® Card](https://www.discover.com/).
 
 <p align="center">
     <img src="img/screenshots/jcrew.jpg" width="654" height="450" alt="Screenshot of extension in use" />
