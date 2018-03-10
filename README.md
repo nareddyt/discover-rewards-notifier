@@ -28,7 +28,7 @@ For information on Continuous Deployment, view the **Continuous Deployment** sec
 You'll need:
 
 - `git` to clone the repo and make contributions
-- `npm` to compile the UI
+- `npm` to install developer dependencies and build the extension
 - `Chrome Web Browser` to test the extension
 
 ### Installing
