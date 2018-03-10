@@ -76,11 +76,6 @@ See [data/README.md](data/README.md)
 
 See [.circleci/README.md](.circleci/README.md)
 
-## Built With
-
-* [npm](https://www.npmjs.com/) - Developer dependency management
-* [CircleCI](https://circleci.com/) - Continuous Deployment
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on submitting pull requests.
