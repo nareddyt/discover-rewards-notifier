@@ -23,7 +23,7 @@ The extension comes with the latest Discover® Deals and Cashback Rewards data, 
 
 <p align="center">
     <a href="https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi">
-        <img src="img/promo/web-store-badge" alt="Click here to view the extension the the Chrome Web Store" />
+        <img src="img/promo/web-store-badge.png" alt="Click here to view the extension the the Chrome Web Store" />
     </a>
 </p>
 
