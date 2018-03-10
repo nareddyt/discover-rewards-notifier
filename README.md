@@ -19,7 +19,7 @@ The intended end-users are customers of [Discover® Card](https://www.discover.c
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 The extension comes with the latest Discover® Deals and Cashback Rewards data, so you don't have to download those manually.
 
-**NOTE:** Only follow these steps if you are a developer. **If you are NOT a developer**, you may install the extension by click on the picture below.
+**NOTE:** Only follow these steps if you are a developer. **If you are NOT a developer**, you should install the extension by clicking on the picture below.
 
 <p align="center">
     <a href="https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi">
