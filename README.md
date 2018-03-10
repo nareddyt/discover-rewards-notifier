@@ -17,7 +17,9 @@ A Chrome Extension that shows a notification when visiting sites that qualify fo
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 The extension comes with the latest Discover® Deals and Cashback Rewards data, so you don't have to download those manually.
 
-TODO see other sections for notes on TODO
+For information on how the deals and cashback data is obtained and processed, view the **Obtaining and Processing the Data** section.
+
+For information on Continuous Deployment, view the **Continuous Deployment** section.
 
 ### Prerequisites
 
@@ -38,61 +40,48 @@ cd discover-rewards-notifier/
 
 #### Install `npm` dependencies
 
+This will install all software needed to develop the extension.
+
+**Note:** We use npm to manage *developer* dependencies. None of these dependencies are required when running the extension as a regular user.
+
 ```
 npm install
 ```
 
 #### Compile *handlebars templates* using `npm`
 
-[Handlebars](http://handlebarsjs.com/) is a templating engine the extension uses for the UI.
-Note that the previous step automatically installed the handlebars CLI.
+[Handlebars](http://handlebarsjs.com/) is a templating engine the extension uses for the UI. Run the command below to compile the required templates.
 
 ```
 npm run compileTemplates
 ```
 
-#### Load the extension in your `Chrome Web Browser`
+#### Load the extension in Chrome
 
-The extension is now fully-built and ready. Follow the short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked) under the **Load the extension** section.
+The extension is now fully-built and ready to use. It needs to be loaded into the Chrome Web Browser so you can use it.
 
-**Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production extension and the developers' custom builds.
+Follow the short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked) under the **Load the extension** section.
 
-## Testing the build
+The extension should work now!
 
-We have no automated tests yet :)
+**Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production build and the developers' custom builds.
 
-### Manual testing
+## Obtaining and Processing the Data
 
-Ensure you can view deals and cashback rewards on various sites.
-Using your `Chrome Web Browser`, go to various retailers to see if the extension recognizes the deal or cashback reward.
+See [data/README.md](data/README)
 
-Look through `data/deals.json` and `data/cashbacks.json` and ensure that the extension properly displays offers for at least 5 of the sites.
+## Continuous Deployment
 
-Try finding a site that has both a deal and a cashback reward. Ensure the extension displays both of them.
-
-### Codacy
-
-We use Codacy to check code style. Codacy automatically runs every time a pull request is submitted.
-The Codacy Bot will comment on any code that doesn't match the style guide.
-
-Sometimes it will be very picky, so feel free to only fix the most obvious errors it finds.
-
-## Updating the data
-
-TODO
-
-## Deployment
-
-TODO
+See [.circleci/README.md](.circleci/README)
 
 ## Built With
 
 * [npm](https://www.npmjs.com/) - Developer dependency management
-* [CircleCI](https://circleci.com/) - Continuous Delivery
+* [CircleCI](https://circleci.com/) - Continuous Deployment
 
 ## Contributing
 
-Please read TODO [CONTRIBUTING.md](CONTRIBUTING) TODO for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING) for details on submitting pull requests.
 
 ## Versioning
 
