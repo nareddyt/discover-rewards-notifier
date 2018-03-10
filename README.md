@@ -42,7 +42,7 @@ cd discover-rewards-notifier/
 
 #### Install `npm` dependencies
 
-This will install all software needed to develop the extension.
+Run the command below to install the packages needed to build the extension.
 
 **Note:** We use npm to manage *developer* dependencies. None of these dependencies are required when running the extension as a regular user.
 
@@ -70,11 +70,11 @@ The extension should work now!
 
 ## Obtaining and Processing the Data
 
-See [data/README.md](data/README)
+See [data/README.md](data/README.md)
 
 ## Continuous Deployment
 
-See [.circleci/README.md](.circleci/README)
+See [.circleci/README.md](.circleci/README.md)
 
 ## Built With
 
@@ -83,7 +83,7 @@ See [.circleci/README.md](.circleci/README)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING) for details on submitting pull requests.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on submitting pull requests.
 
 ## Versioning
 
