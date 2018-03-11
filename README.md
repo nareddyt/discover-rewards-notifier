@@ -14,6 +14,29 @@ The intended end-users are customers of [Discover® Card](https://www.discover.c
     <img src="img/screenshots/jcrew.jpg" width="654" height="450" alt="Screenshot of extension in use" />
 </p>
 
+
+Table of Contents
+=================
+
+  * [Getting Started](#getting-started)
+     * [Prerequisites](#prerequisites)
+     * [Building the extension](#building-the-extension)
+        * [Clone the repo](#clone-the-repo)
+        * [Install npm dependencies](#install-npm-dependencies)
+        * [Compile handlebars templates using npm](#compile-handlebars-templates-using-npm)
+     * [Loading the extension into Chrome](#loading-the-extension-into-chrome)
+  * [Developing](#developing)
+     * [Discover® Data](#discover-data)
+     * [UI Content](#ui-content)
+     * [Javascript and UI Styling](#javascript-and-ui-styling)
+     * [Continuous Deployment](#continuous-deployment)
+     * [Product Website](#product-website)
+  * [Contributing](#contributing)
+  * [Versioning](#versioning)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -35,7 +58,7 @@ You'll need:
 - `npm` to install developer dependencies and build the extension
 - `Chrome Web Browser` to test the extension
 
-### Installing
+### Building the extension
 
 #### Clone the repo
 
@@ -62,7 +85,7 @@ npm install
 npm run compileTemplates
 ```
 
-### Load the extension in Chrome
+### Loading the extension into Chrome
 
 The extension is now fully-built and ready to use. It needs to be loaded into the Chrome Web Browser so you can use it.
 
