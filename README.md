@@ -4,7 +4,7 @@
 
 [![CircleCI Build](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master.svg?style=svg)](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c196a657cab442c98672c7b52fafe1f9)](https://www.codacy.com/app/nareddyt/discover-rewards-notifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nareddyt/discover-rewards-notifier&amp;utm_campaign=Badge_Grade)
-[![Beginner Friendly Project](https://img.shields.io/badge/beginner%20friendly-%E2%9D%A4-red.svg)](https://img.shields.io/badge/beginner%20friendly-%E2%9D%A4-red.svg)
+[![Beginner Friendly Project](https://img.shields.io/badge/beginner%20friendly-%E2%9D%A4-red.svg)](https://github.com/MunGell/awesome-for-beginners)
 
 A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards.
 
