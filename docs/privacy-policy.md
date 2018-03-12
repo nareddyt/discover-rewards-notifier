@@ -6,7 +6,7 @@ This page is used to inform website visitors regarding my policies with the coll
 
 If you choose to use my Service, then you agree to the collection and use of information in relation to this policy.
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible [here](TODO) unless otherwise defined in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible [here](license-and-tos.md) unless otherwise defined in this Privacy Policy.
 
 ## Information Collection and Use
 

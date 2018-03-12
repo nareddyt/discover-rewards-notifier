@@ -16,7 +16,7 @@ You can install the extension from the Chrome Web Store by clicking on the image
 
 ## Usage
 
-After installing the extension from the Chrome Web Store, you should see an icon appear to the right of your address bar.
+After installing the extension from the Chrome Web Store, you should see an icon appear to the right of your address bar (as seen in the first picture above).
 
 The icon will turn orange when the site you visit has an active deal or cashback offer. You can then click on the icon to view more details and redeem the offer.
 
