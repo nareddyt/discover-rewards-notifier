@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: Discover® Deals and Cashback Rewards Notifier
-description: A chrome extension that alerts you when you visit a website that qualifies for a Discover® Deal or Cashback Reward.
-show_downloads: "true"
+description: A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards.
+show_downloads: false
 destination: ../build/docs

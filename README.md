@@ -4,7 +4,7 @@
 
 [![CircleCI Build](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master.svg?style=svg)](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c196a657cab442c98672c7b52fafe1f9)](https://www.codacy.com/app/nareddyt/discover-rewards-notifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nareddyt/discover-rewards-notifier&amp;utm_campaign=Badge_Grade)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)
+[![Beginner Friendly Project](https://img.shields.io/badge/beginner%20friendly-%E2%9D%A4-red.svg)](https://github.com/MunGell/awesome-for-beginners)
 
 A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards.
 
@@ -14,10 +14,41 @@ The intended end-users are customers of [Discover® Card](https://www.discover.c
     <img src="img/screenshots/jcrew.jpg" width="654" height="450" alt="Screenshot of extension in use" />
 </p>
 
+
+Table of Contents
+=================
+
+  * [Getting Started](#getting-started)
+     * [Prerequisites](#prerequisites)
+     * [Building the extension](#building-the-extension)
+        * [Clone the repo](#clone-the-repo)
+        * [Install npm dependencies](#install-npm-dependencies)
+        * [Compile handlebars templates using npm](#compile-handlebars-templates-using-npm)
+     * [Loading the extension into Chrome](#loading-the-extension-into-chrome)
+  * [Developing](#developing)
+     * [Discover® Data](#discover-data)
+     * [UI Content](#ui-content)
+     * [Javascript and UI Styling](#javascript-and-ui-styling)
+     * [Continuous Deployment](#continuous-deployment)
+     * [Product Website](#product-website)
+  * [Contributing](#contributing)
+  * [Versioning](#versioning)
+  * [Authors](#authors)
+  * [License](#license)
+  * [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 The extension comes with the latest Discover® Deals and Cashback Rewards data, so you don't have to download those manually.
+
+**NOTE:** Only follow these steps if you are a developer. **If you are NOT a developer**, you should install the extension by clicking on the picture below.
+
+<p align="center">
+    <a href="https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi">
+        <img src="img/promo/web-store-badge.png" alt="Click here to view the extension in the Chrome Web Store" />
+    </a>
+</p>
 
 ### Prerequisites
 
@@ -27,7 +58,7 @@ You'll need:
 - `npm` to install developer dependencies and build the extension
 - `Chrome Web Browser` to test the extension
 
-### Installing
+### Building the extension
 
 #### Clone the repo
 
@@ -54,7 +85,7 @@ npm install
 npm run compileTemplates
 ```
 
-### Load the extension in Chrome
+### Loading the extension into Chrome
 
 The extension is now fully-built and ready to use. It needs to be loaded into the Chrome Web Browser so you can use it.
 
