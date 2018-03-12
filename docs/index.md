@@ -1,3 +1,6 @@
+<!-- FIXME favicon not working -->
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+
 If you own a [Discover® Card](https://www.discover.com/) and use Google Chrome Web Browser, this extension is perfect for you. Don't miss out on another Discover® Deal or Cashback Reward again!
 
 <p align="center">
