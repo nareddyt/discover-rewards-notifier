@@ -18,10 +18,10 @@
  */
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
-const DEAL_INPUT_FILE = '../data/deal/raw.html';
-const DEAL_OUTPUT_FILE = '../data/deal/data.json';
-const CASHBACK_INPUT_FOLDER = '../data/cashback/raw/';
-const CASHBACK_OUTPUT_FILE = '../data/cashback/data.json';
+const DEAL_INPUT_FILE = 'data/deal/raw.html';
+const DEAL_OUTPUT_FILE = 'data/deal/data.json';
+const CASHBACK_INPUT_FOLDER = 'data/cashback/raw/';
+const CASHBACK_OUTPUT_FILE = 'data/cashback/data.json';
 
 let argv = require('yargs')
   .alias('c', 'cashback')

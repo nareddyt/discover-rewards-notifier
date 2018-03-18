@@ -94,7 +94,9 @@ Just to double check, you might want to visit `page 7` for the URL above and ens
 
 ### Process the data
 
-Processing the data is abstracted away into a node.js script. All you have to do is run two commands:
+Processing the data is abstracted away into a node.js script. All you have to do is run two commands.
+
+Ensure you are in the root directory of this project. Note the following commands will take a few minutes to run:
 
 ```bash
 npm run updateDeal
@@ -105,4 +107,8 @@ Now all the processed data should be in the following directories:
 - `/data/deal/data.json`
 - `/data/cashback/data.json`
 
-And you're done! This is the data that is used by the extension at run-time.
+And you're done! This is ALL the data that is used by the extension at run-time.
+
+## Viewing historical data
+
+Since the data is kept under version control, you can view all previous Discover Deals and Discover Cashback Offers by looking at the git commit history. It's interesting to see which retailers Discover adds/removes over the months.
