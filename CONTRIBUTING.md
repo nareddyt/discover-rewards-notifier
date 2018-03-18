@@ -9,7 +9,7 @@ We have no automated tests yet. We just make sure the extension works via manual
 Here is a non-exhaustive list of manual tests to perform:
 
 - Ensure you can view deals and cashback rewards on various sites. Visit various retailers' websites to see if the extension recognizes the deal or cashback reward.
-- Look through `data/deals.json` and `data/cashbacks.json` and ensure that the extension properly displays offers for at least 5 of the sites.
+- Look through `data/data.json` and `data/data.json` and ensure that the extension properly displays offers for at least 5 of the sites.
 - Try finding a site that has both a deal and a cashback reward. Ensure the extension displays both of them.
 
 ## Codacy
