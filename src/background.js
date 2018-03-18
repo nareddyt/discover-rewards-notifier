@@ -1,6 +1,6 @@
 
-const CASHBACK_DATA_PATH = '../data/cashbacks.json';
-const DEAL_DATA_PATH = '../data/deals.json';
+const CASHBACK_DATA_PATH = '../data/cashback/data.json';
+const DEAL_DATA_PATH = '../data/deal/data.json';
 
 let cashbacks = null;
 let deals = null;

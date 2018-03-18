@@ -126,15 +126,6 @@
     "site_name": "Bed Bath & Beyond"
   },
   {
-    "site_url": "www.bestwestern.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP225",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP225.gif",
-    "site_name": "Best Western®"
-  },
-  {
     "site_url": "www.blackangus.com",
     "offers": [
       "$20 gets you $25"
@@ -182,16 +173,6 @@
     "site_name": "Bubba Gump Shrimp Co."
   },
   {
-    "site_url": "www.basspro.com",
-    "offers": [
-      "$20 gets you $25",
-      "$40 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP442",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP442.gif",
-    "site_name": "Bass Pro Shops - Featured"
-  },
-  {
     "site_url": "www.bucadibeppo.com",
     "offers": [
       "$20 gets you $25",
@@ -200,6 +181,16 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP053",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP053.gif",
     "site_name": "Buca di Beppo®"
+  },
+  {
+    "site_url": "www.basspro.com",
+    "offers": [
+      "$20 gets you $25",
+      "$40 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP442",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP442.gif",
+    "site_name": "Bass Pro Shops - Featured"
   },
   {
     "site_url": "www.buffalowildwings.com",
@@ -359,6 +350,15 @@
     "site_name": "Einstein Bros. Bagels"
   },
   {
+    "site_url": "www.express.com",
+    "offers": [
+      "$45 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP464",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP464.gif",
+    "site_name": "Express"
+  },
+  {
     "site_url": "www.flemingssteakhouse.com",
     "offers": [
       "$45 gets you $50"
@@ -366,15 +366,6 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP269",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP269.gif",
     "site_name": "Fleming's Prime Steakhouse & Wine Bar"
-  },
-  {
-    "site_url": "www.express.com",
-    "offers": [
-      "$20 gets you $25"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP181",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP181.gif",
-    "site_name": "Express - Special"
   },
   {
     "site_url": "www.footlocker.com",
@@ -789,6 +780,15 @@
     "site_name": "Saltgrass Steak House"
   },
   {
+    "site_url": "www.sears.com",
+    "offers": [
+      "$45 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP170",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP170.gif",
+    "site_name": "Sears"
+  },
+  {
     "site_url": "www.seasons52.com",
     "offers": [
       "$45 gets you $50"
@@ -829,6 +829,7 @@
   {
     "site_url": "www.spafinder.com",
     "offers": [
+      "$40 gets you $50",
       "$80 gets you $100"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP197",
