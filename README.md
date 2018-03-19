@@ -91,7 +91,7 @@ The extension is now fully-built and ready to use. It needs to be loaded into th
 
 Follow the short list of steps from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked) under the **Load the extension** section.
 
-The extension should work now!
+The extension should work now! Try visiting sites like www.jcrew.com and www.ae.com.
 
 **Note:** You'll see a special *developer icon* when you load the extension. This helps differentiate between the production build and the developers' custom builds.
 
