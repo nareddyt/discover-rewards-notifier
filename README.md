@@ -111,11 +111,11 @@ Now that you have the extension setup, follow any one of these guides to learn h
 
 See [data/README.md](data/README.md)
 
-### UI Content
+### UI
 
 See [templates/README.md](templates/README.md)
 
-### Javascript and UI Styling
+### Javascript and CSS
 
 See [src/README.md](src/README.md)
 
