@@ -28,6 +28,6 @@ You can view all our GitHub releases [here](https://github.com/nareddyt/discover
 
 Our CircleCI configuration is largely based around [this blog post](https://circleci.com/blog/continuously-deploy-a-chrome-extension/).
 
-For more info, read the link above and take a look at the [.config.yml](.config.yml) config file.
+For more info, read the link above and take a look at the [config.yml](config.yml) config file.
 
 If developers would like to learn more, please ask **@nareddyt** and he can explain or add more docs.
