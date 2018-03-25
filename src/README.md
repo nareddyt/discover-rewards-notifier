@@ -1,1 +1,1 @@
-# Javascript and CSS
+# Core Extension Code

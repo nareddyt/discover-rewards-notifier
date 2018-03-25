@@ -28,7 +28,7 @@ Table of Contents
   * [Developing](#developing)
      * [Discover® Data](#discover-data)
      * [UI](#ui)
-     * [Javascript and CSS](#javascript-and-css)
+     * [Core Extension Code](#core-extension-code)
      * [Continuous Deployment](#continuous-deployment)
      * [Product Website](#product-website)
   * [Contributing](#contributing)
@@ -115,7 +115,7 @@ See [data/README.md](data/README.md)
 
 See [templates/README.md](templates/README.md)
 
-### Javascript and CSS
+### Core Extension Code
 
 See [src/README.md](src/README.md)
 
