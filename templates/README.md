@@ -14,7 +14,7 @@ As stated in the **Getting Started Guide** in the [../README.md](../README.md), 
 npm run compileTemplates
 ```
 
-This places the compiled templates directly into [../src][../src].
+This places the compiled templates directly into [../src](../src).
 
 _Alternatively_, you can **watch** the templates so that they automatically re-compile anytime you change them.
 
@@ -24,4 +24,4 @@ To use this feature, run this command:
 npm run watchTemplates
 ```
 
-This also places the compiled templates directly into [../src][../src].
+This also places the compiled templates directly into [../src](../src).
