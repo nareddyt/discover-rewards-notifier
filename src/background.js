@@ -36,6 +36,7 @@ fetchJSONFile(CASHBACK_DATA_PATH, function (data) {
  */
 function onTabRemoved(tabId) {
   // Remove all enabled items for this tab
+  // console.debug(tabId, 'removed');
   delete enabledItems[tabId];
   console.debug(enabledItems);
 }
@@ -44,7 +45,7 @@ function onTabRemoved(tabId) {
  * Callback for when a tab is updated. Tied to the chrome event handler.
  */
 function onTabUpdated(tabId, changeInfo, tab) {
-  console.debug(tabId, changeInfo, tab);
+  // console.debug(tabId, changeInfo, tab);
 
   if (!cashbacks || !deals) {
     // Should never happen
@@ -52,14 +53,14 @@ function onTabUpdated(tabId, changeInfo, tab) {
     return;
   }
 
-  // If loading, then the url might not be populated yet.
-  // Note this doesn't correspond to the **page** loading. This is the **url** loading.
+  // Only look at the url when tab state first changes to loading
   if (changeInfo.status !== "loading") {
+    // console.debug(tabId, 'not doing anything interesting');
     return;
   }
 
   let newUrl = tab.url;
-  console.log(tabId, 'New url:', newUrl);
+  // console.debug(tabId, 'New url:', newUrl);
 
   // Determine which items should be displayed for this url
   // FIXME loading this each time might be inefficient. Could try caching the results
@@ -67,7 +68,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
   if (items.length === 0) {
     // There are no items for this url
 
-    console.debug(tabId, newUrl, 'has no deals');
+    // console.debug(tabId, newUrl, 'has no deals');
 
     if (!getEnabledItems(tabId)) {
       // Page action for tab was already inactive, no need to do anything
@@ -75,7 +76,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
     }
 
     // Hide page icon and set title
-    console.info(tabId, 'Hiding page action');
+    // console.debug(tabId, 'Hiding page action');
     chrome.pageAction.hide(tabId);
     chrome.pageAction.setTitle({
       tabId: tabId,
@@ -83,17 +84,17 @@ function onTabUpdated(tabId, changeInfo, tab) {
     });
 
     // Remove from enabled
-    console.info(tabId, 'Removing', tabId, 'from enabledItems');
+    // console.info(tabId, 'Removing', tabId, 'from enabledItems');
     delete enabledItems[tabId];
     console.debug(enabledItems);
 
     return;
   }
   // else, there are items for this page!
-  console.log(tabId, newUrl, 'has items', items);
+  console.info(tabId, newUrl, 'has items', items);
 
   // Enable page action and set title
-  console.info(tabId, 'Showing page action');
+  // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
   chrome.pageAction.setTitle({
     tabId: tabId,
@@ -101,7 +102,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
   });
 
   // Add to enabled
-  console.info(tabId, 'Adding', tabId, 'to enabledItems');
+  // console.info(tabId, 'Adding', tabId, 'to enabledItems');
   enabledItems[tabId] = items;
   console.debug(enabledItems);
 }
