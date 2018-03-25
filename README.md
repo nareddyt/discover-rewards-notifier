@@ -119,6 +119,10 @@ See [templates/README.md](templates/README.md)
 
 See [src/README.md](src/README.md)
 
+### Tools and Scripts
+
+See [tools/README.md](tools/README.md)
+
 ### Continuous Deployment
 
 See [.circleci/README.md](.circleci/README.md)
