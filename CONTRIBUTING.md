@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-TODO
+We don't have formal guidelines! Just respect the maintainers' decisions and follow the items below
 
 ## Testing the build
 

@@ -27,8 +27,8 @@ Table of Contents
      * [Loading the extension into Chrome](#loading-the-extension-into-chrome)
   * [Developing](#developing)
      * [Discover® Data](#discover-data)
-     * [UI Content](#ui-content)
-     * [Javascript and UI Styling](#javascript-and-ui-styling)
+     * [UI](#ui)
+     * [Core Extension Code](#core-extension-code)
      * [Continuous Deployment](#continuous-deployment)
      * [Product Website](#product-website)
   * [Contributing](#contributing)
@@ -111,13 +111,17 @@ Now that you have the extension setup, follow any one of these guides to learn h
 
 See [data/README.md](data/README.md)
 
-### UI Content
+### UI
 
 See [templates/README.md](templates/README.md)
 
-### Javascript and UI Styling
+### Core Extension Code
 
 See [src/README.md](src/README.md)
+
+### Tools and Scripts
+
+See [tools/README.md](tools/README.md)
 
 ### Continuous Deployment
 
