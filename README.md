@@ -29,6 +29,7 @@ Table of Contents
      * [Discover® Data](#discover-data)
      * [UI](#ui)
      * [Core Extension Code](#core-extension-code)
+     * [Tools and Scripts](#tools-and-scripts)
      * [Continuous Deployment](#continuous-deployment)
      * [Product Website](#product-website)
   * [Contributing](#contributing)
