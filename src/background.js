@@ -15,6 +15,14 @@ let deals = null;
 // Example: { 'tab 1': ['deal_1', 'deal_2', 'cashback_1'] }
 let enabledItems = {};
 
+// Whenever we detect an update is available, reload the extension
+// We need this (for now) because we use a persistent background page
+// This ensures that users get the latest discover data
+chrome.runtime.onUpdateAvailable.addListener(function(details) {
+  console.warn('New update available!', details);
+  chrome.runtime.reload();
+});
+
 // Load the cashback data into memory
 fetchJSONFile(CASHBACK_DATA_PATH, function (data) {
   cashbacks = data;
