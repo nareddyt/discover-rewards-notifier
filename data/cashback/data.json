@@ -30,6 +30,16 @@
     "site_name": "Aerie"
   },
   {
+    "site_url": "www.airbnb.com",
+    "offers": [
+      "$45 gets you $50",
+      "$90 gets you $100"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP488",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP488.gif",
+    "site_name": "Airbnb"
+  },
+  {
     "site_url": "www.amctheatres.com",
     "offers": [
       "$45 gets you $50"
@@ -135,6 +145,16 @@
     "site_name": "Black Angus Steakhouse"
   },
   {
+    "site_url": "www.basspro.com",
+    "offers": [
+      "$20 gets you $25",
+      "$40 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP442",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP442.gif",
+    "site_name": "Bass Pro Shops - Featured"
+  },
+  {
     "site_url": "www.bonefishgrill.com",
     "offers": [
       "$45 gets you $50"
@@ -181,16 +201,6 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP053",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP053.gif",
     "site_name": "Buca di Beppo®"
-  },
-  {
-    "site_url": "www.basspro.com",
-    "offers": [
-      "$20 gets you $25",
-      "$40 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP442",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP442.gif",
-    "site_name": "Bass Pro Shops - Featured"
   },
   {
     "site_url": "www.buffalowildwings.com",
@@ -359,6 +369,15 @@
     "site_name": "Express"
   },
   {
+    "site_url": "www.fandango.com",
+    "offers": [
+      "$45 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP494",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP494.gif",
+    "site_name": "Fandango"
+  },
+  {
     "site_url": "www.flemingssteakhouse.com",
     "offers": [
       "$45 gets you $50"
@@ -384,7 +403,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP250",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP250.gif",
-    "site_name": "GameStop®"
+    "site_name": "Gamestop"
   },
   {
     "site_url": "www.gap.com",
@@ -852,7 +871,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP154",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP154.gif",
-    "site_name": "Starbucks Coffee Company"
+    "site_name": "Starbucks"
   },
   {
     "site_url": "www.sunglasshut.com",
@@ -886,7 +905,7 @@
     "site_name": "Texas Roadhouse"
   },
   {
-    "site_url": "www.tgifridays.com",
+    "site_url": "locations.tgifridays.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -941,7 +960,7 @@
     "site_name": "Ulta"
   },
   {
-    "site_url": "www.underarmour.com",
+    "site_url": "en.wikipedia.org",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50"
