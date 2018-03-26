@@ -1,5 +1,13 @@
 [
   {
+    "title": "Get up to $6 off each of your first 2 rides, Uber",
+    "site_name": "Uber",
+    "site_url": "www.uber.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10763",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10409_big_08312017.jpg",
+    "expiry_date": "Expires 03/31/2018"
+  },
+  {
     "title": "20% off one regularly priced small appliance, BestBuy.com®",
     "site_name": "BestBuy.com®",
     "site_url": "www.bestbuy.com",
@@ -16,12 +24,12 @@
     "expiry_date": "Expires 03/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus online, Macy's",
+    "title": "Get 20% off* or an extra 10% off** select sale and clearance items, Macy's",
     "site_name": "Macy's",
     "site_url": "www.macys.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10437",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3601_big_06092014.jpg",
-    "expiry_date": "Ongoing"
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10719",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10719_big_03142018.jpg",
+    "expiry_date": "Expires 04/18/2018"
   },
   {
     "title": "Get up to 25% off select PCs, Lenovo",
@@ -30,14 +38,6 @@
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10600",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10600_big_11292017.jpg",
     "expiry_date": "Expires 06/30/2018"
-  },
-  {
-    "title": "Earn 5% Cashback Bonus online, J.Crew Factory",
-    "site_name": "J.Crew Factory",
-    "site_url": "factory.jcrew.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9845",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3748_big_06102014.jpg",
-    "expiry_date": "Ongoing"
   },
   {
     "title": "Get 25% off regular menu price online orders, Papa John's",
@@ -160,14 +160,6 @@
     "expiry_date": "Expires 04/01/2018"
   },
   {
-    "title": "Get 12% off a purchase online, Cost Plus World Market",
-    "site_name": "Cost Plus World Market",
-    "site_url": "www.worldmarket.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10696",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10301_big_07192017.jpg",
-    "expiry_date": "Expires 02/28/2019"
-  },
-  {
     "title": "$50 off your move, North American Van Lines",
     "site_name": "North American Van Lines",
     "site_url": "www.northamerican.com",
@@ -184,11 +176,27 @@
     "expiry_date": "Expires 06/30/2018"
   },
   {
+    "title": "Get 12% off a purchase online, Cost Plus World Market",
+    "site_name": "Cost Plus World Market",
+    "site_url": "www.worldmarket.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10696",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10301_big_07192017.jpg",
+    "expiry_date": "Expires 02/28/2019"
+  },
+  {
     "title": "Get 10% off your purchase, Big 5 Sporting Goods",
     "site_name": "Big 5 Sporting Goods",
     "site_url": "www.big5sportinggoods.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10737",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6385_big_01122015.jpg",
+    "expiry_date": "Expires 12/31/2018"
+  },
+  {
+    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Uniworld River Cruises",
+    "site_name": "Uniworld River Cruises",
+    "site_url": "www.uniworld.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10646",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10275_big_06262017.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -198,14 +206,6 @@
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10741",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9469_big_06092016.jpg",
     "expiry_date": "Expires 03/31/2018"
-  },
-  {
-    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Uniworld River Cruises",
-    "site_name": "Uniworld River Cruises",
-    "site_url": "www.uniworld.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10646",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10275_big_06262017.jpg",
-    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Get 15% off a purchase of $100 or more online, Kohl's",
@@ -224,14 +224,6 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Earn 5% Cashback Bonus online, Bloomingdale's",
-    "site_name": "Bloomingdale's",
-    "site_url": "www.bloomingdales.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10146",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3615_big_06062014.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
     "title": "Get 20% off one regular priced item, Dunham's Sports",
     "site_name": "Dunham's Sports",
     "site_url": "www.dunhamssports.com",
@@ -240,11 +232,27 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
+    "title": "Earn 5% Cashback Bonus online, Bloomingdale's",
+    "site_name": "Bloomingdale's",
+    "site_url": "www.bloomingdales.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10146",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3615_big_06062014.jpg",
+    "expiry_date": "Ongoing"
+  },
+  {
     "title": "Earn 5% Cashback Bonus online, Saks Off 5TH",
     "site_name": "Saks Off 5TH",
     "site_url": "www.saksoff5th.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10694",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_4435_big_07182014.jpg",
+    "expiry_date": "Ongoing"
+  },
+  {
+    "title": "Earn 5% Cashback Bonus online, Gap",
+    "site_name": "Gap",
+    "site_url": "www.gap.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9718",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3978_big_06132014.jpg",
     "expiry_date": "Ongoing"
   },
   {
@@ -280,17 +288,9 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Earn 5% Cashback Bonus online, Gap",
-    "site_name": "Gap",
-    "site_url": "www.gap.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9718",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3978_big_06132014.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
     "title": "Earn 10% Cashback Bonus online, Under Armour",
     "site_name": "Under Armour",
-    "site_url": "www.underarmour.com",
+    "site_url": "en.wikipedia.org",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10446",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3637_big_06092014.jpg",
     "expiry_date": "Ongoing"
@@ -302,6 +302,14 @@
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9780",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3990_big_06172014.jpg",
     "expiry_date": "Ongoing"
+  },
+  {
+    "title": "Get $10 off a purchase of $59.98 or more, Shoe Carnival",
+    "site_name": "Shoe Carnival",
+    "site_url": "www.shoecarnival.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10723",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10723_big_02052018.jpg",
+    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Get 15% off an online purchase, Hollister",
@@ -336,11 +344,19 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Get $10 off a purchase of $59.98 or more, Shoe Carnival",
-    "site_name": "Shoe Carnival",
-    "site_url": "www.shoecarnival.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10723",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10723_big_02052018.jpg",
+    "title": "Get 15% off an online purchase, Abercrombie & Fitch",
+    "site_name": "Abercrombie & Fitch",
+    "site_url": "www.abercrombie.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10525",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9731_big_10102016.jpg",
+    "expiry_date": "Expires 04/01/2018"
+  },
+  {
+    "title": "Get 40% off regular priced items, Men's Wearhouse",
+    "site_name": "Men's Wearhouse",
+    "site_url": "www.menswearhouse.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10652",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9888_big_12152016.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -360,36 +376,12 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Atlantis Resorts",
-    "site_name": "Atlantis Resorts",
-    "site_url": "www.atlantisbahamas.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10632",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5007_big_09122014.jpg",
-    "expiry_date": "Expires 12/31/2018"
-  },
-  {
-    "title": "Get 15% off an online purchase, Abercrombie & Fitch",
-    "site_name": "Abercrombie & Fitch",
-    "site_url": "www.abercrombie.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10525",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9731_big_10102016.jpg",
-    "expiry_date": "Expires 04/01/2018"
-  },
-  {
     "title": "Earn 5% Cashback Bonus online, Nike",
     "site_name": "Nike",
     "site_url": "www.nike.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10474",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_4277_big_08272014.jpg",
     "expiry_date": "Ongoing"
-  },
-  {
-    "title": "Get 40% off regular priced items, Men's Wearhouse",
-    "site_name": "Men's Wearhouse",
-    "site_url": "www.menswearhouse.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10652",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9888_big_12152016.jpg",
-    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "20% off purchase of $40 or more, Gymboree",
@@ -400,11 +392,11 @@
     "expiry_date": "Expires 05/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Palace Resorts",
-    "site_name": "Palace Resorts",
-    "site_url": "www.palaceresorts.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10642",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6908_big_02262015.jpg",
+    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Atlantis Resorts",
+    "site_name": "Atlantis Resorts",
+    "site_url": "www.atlantisbahamas.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10632",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5007_big_09122014.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -416,12 +408,12 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Get 20% off bouquets, Teleflora",
-    "site_name": "Teleflora",
-    "site_url": "www.teleflora.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10614",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10577_big_11162017.jpg",
-    "expiry_date": "Expires 07/31/2018"
+    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Palace Resorts",
+    "site_name": "Palace Resorts",
+    "site_url": "www.palaceresorts.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10642",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6908_big_02262015.jpg",
+    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Get 20% off a purchase, FragranceNet.com",
@@ -440,6 +432,14 @@
     "expiry_date": "Ongoing"
   },
   {
+    "title": "Earn 5% Cashback Bonus online, Athleta",
+    "site_name": "Athleta",
+    "site_url": "www.athleta.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10168",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10168_big_02272018.jpg",
+    "expiry_date": "Ongoing"
+  },
+  {
     "title": "Earn 10% Cashback Bonus online, The North Face",
     "site_name": "The North Face",
     "site_url": "www.thenorthface.com",
@@ -448,44 +448,28 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Get 20% off a purchase, FTD",
-    "site_name": "FTD",
-    "site_url": "www.ftd.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10743",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10060_big_03232017.jpg",
-    "expiry_date": "Expires 04/08/2018"
-  },
-  {
-    "title": "Get 20% off* or an extra 10% off** select sale and clearance items, Macy's",
-    "site_name": "Macy's",
-    "site_url": "www.macys.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10719",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10719_big_03142018.jpg",
-    "expiry_date": "Expires 04/18/2018"
-  },
-  {
-    "title": "Get up to $6 off each of your first 2 rides, Uber",
-    "site_name": "Uber",
-    "site_url": "www.uber.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10763",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10409_big_08312017.jpg",
-    "expiry_date": "Expires 03/31/2018"
-  },
-  {
-    "title": "Get up to 79% off a Gourmet Grilling Favorites purchase, Omaha Steaks",
-    "site_name": "Omaha Steaks",
-    "site_url": "www.omahasteaks.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10730",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9806_big_11182016.jpg",
+    "title": "Get 20% off bouquets, Teleflora",
+    "site_name": "Teleflora",
+    "site_url": "www.teleflora.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10614",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10577_big_11162017.jpg",
     "expiry_date": "Expires 07/31/2018"
   },
   {
-    "title": "Get $10 off HotRate® Car booking of $150 or more, Hotwire",
-    "site_name": "Hotwire",
-    "site_url": "www.hotwire.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10722",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8926_big_12082015.jpg",
-    "expiry_date": "Expires 03/25/2018"
+    "title": "Get $5 off an online purchase of $50 or more, Target",
+    "site_name": "Target",
+    "site_url": "www.target.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10749",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10555_big_11092017.jpg",
+    "expiry_date": "Expires 04/30/2018"
+  },
+  {
+    "title": "Get a free Hopper 3, free installation + 3 months Premium Channels with activation, Dish Network",
+    "site_name": "Dish Network",
+    "site_url": "www.dish.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10764",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5468_big_10232014.jpg",
+    "expiry_date": "Expires 04/08/2018"
   },
   {
     "title": "Get up to 25% off base rates plus up to $20 off on a Weekend rental, Hertz",
@@ -600,6 +584,14 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
+    "title": "Earn 5% Cashback Bonus online, Macy's",
+    "site_name": "Macy's",
+    "site_url": "www.macys.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10437",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3601_big_06092014.jpg",
+    "expiry_date": "Ongoing"
+  },
+  {
     "title": "40% off one regular priced item, Neiman Marcus Last Call Studio",
     "site_name": "Neiman Marcus Last Call Studio",
     "site_url": "www.lastcall.com",
@@ -632,19 +624,19 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Earn 5% Cashback Bonus, Kiehl's online",
-    "site_name": "Kiehl's online",
-    "site_url": "www.kiehls.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9165",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9165_big_03132018.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
     "title": "Earn 5% Cashback Bonus, Lancome online",
     "site_name": "Lancome online",
     "site_url": "www.lancome-usa.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9166",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3746_big_06102014.jpg",
+    "expiry_date": "Ongoing"
+  },
+  {
+    "title": "Earn 5% Cashback Bonus, Kiehl's online",
+    "site_name": "Kiehl's online",
+    "site_url": "www.kiehls.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/9165",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9165_big_03132018.jpg",
     "expiry_date": "Ongoing"
   },
   {
@@ -685,14 +677,6 @@
     "site_url": "www.jcpenney.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/8997",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3620_big_06062014.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
-    "title": "Earn 5% Cashback Bonus online, J.Crew",
-    "site_name": "J.Crew",
-    "site_url": "www.jcrew.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/8995",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8995_big_11202017.jpg",
     "expiry_date": "Ongoing"
   },
   {
@@ -752,14 +736,6 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Earn 5% Cashback Bonus online, Athleta",
-    "site_name": "Athleta",
-    "site_url": "www.athleta.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10168",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10168_big_02272018.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
     "title": "Earn 5% Cashback Bonus online, Abt",
     "site_name": "Abt",
     "site_url": "www.abt.com",
@@ -784,6 +760,22 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
+    "title": "Get 20% off a purchase, FTD",
+    "site_name": "FTD",
+    "site_url": "www.ftd.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10743",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10060_big_03232017.jpg",
+    "expiry_date": "Expires 04/08/2018"
+  },
+  {
+    "title": "Earn 10% Cashback Bonus online, Ann Taylor",
+    "site_name": "Ann Taylor",
+    "site_url": "www.anntaylor.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10746",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10746_big_02282018.jpg",
+    "expiry_date": "Expires 03/31/2018"
+  },
+  {
     "title": "Earn 5% Cashback Bonus online, Coach",
     "site_name": "Coach",
     "site_url": "www.coach.com",
@@ -800,28 +792,20 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus online, Ralph Lauren",
-    "site_name": "Ralph Lauren",
-    "site_url": "www.ralphlauren.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10608",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10536_big_10272017.jpg",
-    "expiry_date": "Ongoing"
-  },
-  {
-    "title": "Earn 10% Cashback Bonus online, Ann Taylor",
-    "site_name": "Ann Taylor",
-    "site_url": "www.anntaylor.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10746",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10746_big_02282018.jpg",
-    "expiry_date": "Expires 03/31/2018"
-  },
-  {
     "title": "Enjoy $15 and Free Shipping on orders over $100, New Balance",
     "site_name": "New Balance",
     "site_url": "www.newbalance.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10353",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9521_big_06302016.jpg",
     "expiry_date": "Expires 06/30/2018"
+  },
+  {
+    "title": "Earn 5% Cashback Bonus online, Ralph Lauren",
+    "site_name": "Ralph Lauren",
+    "site_url": "www.ralphlauren.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10608",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10536_big_10272017.jpg",
+    "expiry_date": "Ongoing"
   },
   {
     "title": "20% off purchase of $40 or more, Crazy 8",
@@ -864,20 +848,20 @@
     "expiry_date": "Ongoing"
   },
   {
-    "title": "Get 20% off an online purchase, Things Remembered",
-    "site_name": "Things Remembered",
-    "site_url": "www.thingsremembered.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10740",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10466_big_09212017.jpg",
-    "expiry_date": "Expires 08/31/2018"
-  },
-  {
     "title": "20% off your purchase of $100 or more, Nine West",
     "site_name": "Nine West",
     "site_url": "www.ninewest.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10136",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9324_big_03232016.jpg",
     "expiry_date": "Expires 06/30/2018"
+  },
+  {
+    "title": "Get 20% off an online purchase, Things Remembered",
+    "site_name": "Things Remembered",
+    "site_url": "www.thingsremembered.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10740",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10466_big_09212017.jpg",
+    "expiry_date": "Expires 08/31/2018"
   },
   {
     "title": "Save $15 off your purchase of $75 or more online, Naturalizer.com",
@@ -920,20 +904,20 @@
     "expiry_date": "Expires 06/30/2018"
   },
   {
-    "title": "Get 20% off a purchase, 1800Baskets.com",
-    "site_name": "1800Baskets.com",
-    "site_url": "www.1800baskets.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10699",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9832_big_11162016.jpg",
-    "expiry_date": "Expires 12/31/2018"
-  },
-  {
     "title": "Get 15% off a purchase of $35+, JellyBelly.com",
     "site_name": "JellyBelly.com",
     "site_url": "www.jellybelly.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10447",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10447_big_09172017.jpg",
     "expiry_date": "Expires 03/31/2018"
+  },
+  {
+    "title": "Get 20% off a purchase, 1800Baskets.com",
+    "site_name": "1800Baskets.com",
+    "site_url": "www.1800baskets.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10699",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9832_big_11162016.jpg",
+    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Get a $10 gift card when you join or renew in-store, Sam's Club",
@@ -1000,20 +984,20 @@
     "expiry_date": "Expires 03/31/2018"
   },
   {
-    "title": "Get 5% off a rental plus a free upgrade, Alamo",
-    "site_name": "Alamo",
-    "site_url": "www.alamo.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10629",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6957_big_03092015.jpg",
-    "expiry_date": "Expires 12/31/2018"
-  },
-  {
     "title": "Earn 10% Cashback Bonus online, GNC",
     "site_name": "GNC",
     "site_url": "www.gnc.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10242",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_3608_big_06182014.jpg",
     "expiry_date": "Ongoing"
+  },
+  {
+    "title": "Get 5% off a rental plus a free upgrade, Alamo",
+    "site_name": "Alamo",
+    "site_url": "www.alamo.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10629",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6957_big_03092015.jpg",
+    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Get $75 off on select hotel+flight packages, Travelocity",
@@ -1032,14 +1016,6 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Get $15 off Hot Rate® Hotel booking of $200 or more, Hotwire",
-    "site_name": "Hotwire",
-    "site_url": "www.hotwire.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10750",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8926_big_12082015.jpg",
-    "expiry_date": "Expires 03/25/2018"
-  },
-  {
     "title": "Get 10% off qualifying weekend or weekly rentals, Dollar Rent A Car",
     "site_name": "Dollar Rent A Car",
     "site_url": "www.dollar.com",
@@ -1056,7 +1032,7 @@
     "expiry_date": "Expires 01/20/2020"
   },
   {
-    "title": "Get $30 off your first order, Blue Apron",
+    "title": "Get $35 off your first order, Blue Apron",
     "site_name": "Blue Apron",
     "site_url": "www.blueapron.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10697",
@@ -1072,14 +1048,6 @@
     "expiry_date": "Expires 06/30/2018"
   },
   {
-    "title": "Receive $25 service credit, Ting",
-    "site_name": "Ting",
-    "site_url": "ting.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10232",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10232_big_06192017.jpg",
-    "expiry_date": "Expires 05/31/2018"
-  },
-  {
     "title": "Get 10% off live event tickets, Premium Seats USA",
     "site_name": "Premium Seats USA",
     "site_url": "www.premiumseatsusa.com",
@@ -1088,19 +1056,19 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
+    "title": "Receive $25 service credit, Ting",
+    "site_name": "Ting",
+    "site_url": "ting.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10232",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10232_big_06192017.jpg",
+    "expiry_date": "Expires 05/31/2018"
+  },
+  {
     "title": "Get 10% off any service, AAMCO",
     "site_name": "AAMCO",
     "site_url": "www.aamco.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10611",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10611_big_12042017.jpg",
-    "expiry_date": "Expires 12/31/2018"
-  },
-  {
-    "title": "Get 20% off a purchase, Fruitbouquets.com",
-    "site_name": "Fruitbouquets.com",
-    "site_url": "www.fruitbouquets.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10701",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8690_big_10092015.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -1112,11 +1080,27 @@
     "expiry_date": "Expires 12/30/2018"
   },
   {
-    "title": "Get 20% off a regularly priced online purchase, Harry & David",
-    "site_name": "Harry & David",
-    "site_url": "www.harryanddavid.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10700",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9393_big_04292016.jpg",
+    "title": "Get up to 79% off a Gourmet Grilling Favorites purchase, Omaha Steaks",
+    "site_name": "Omaha Steaks",
+    "site_url": "www.omahasteaks.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10730",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9806_big_11182016.jpg",
+    "expiry_date": "Expires 07/31/2018"
+  },
+  {
+    "title": "Get 10% off a purchase online, Vitamin World",
+    "site_name": "Vitamin World",
+    "site_url": "www.vitaminworld.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10731",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10731_big_02152018.jpg",
+    "expiry_date": "Expires 12/30/2018"
+  },
+  {
+    "title": "Get 20% off a purchase, Fruitbouquets.com",
+    "site_name": "Fruitbouquets.com",
+    "site_url": "www.fruitbouquets.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10701",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8690_big_10092015.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -1128,28 +1112,28 @@
     "expiry_date": "Expires 03/31/2018"
   },
   {
-    "title": "Get 20% off a regularly priced purchase, Wolferman's",
-    "site_name": "Wolferman's",
-    "site_url": "www.wolfermans.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10627",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9392_big_05022016.jpg",
-    "expiry_date": "Expires 12/31/2018"
-  },
-  {
-    "title": "Get 10% off a purchase online, Vitamin World",
-    "site_name": "Vitamin World",
-    "site_url": "www.vitaminworld.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10731",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10731_big_02152018.jpg",
-    "expiry_date": "Expires 12/30/2018"
-  },
-  {
     "title": "Save 12%, Penske Truck Rental",
     "site_name": "Penske Truck Rental",
     "site_url": "www.pensketruckrental.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10162",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9533_big_07082016.jpg",
     "expiry_date": "Expires 06/30/2018"
+  },
+  {
+    "title": "Get 20% off a regularly priced online purchase, Harry & David",
+    "site_name": "Harry & David",
+    "site_url": "www.harryanddavid.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10700",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9393_big_04292016.jpg",
+    "expiry_date": "Expires 12/31/2018"
+  },
+  {
+    "title": "Get 20% off a regularly priced purchase, Wolferman's",
+    "site_name": "Wolferman's",
+    "site_url": "www.wolfermans.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10627",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9392_big_05022016.jpg",
+    "expiry_date": "Expires 12/31/2018"
   },
   {
     "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Abercrombie & Kent",
@@ -1176,11 +1160,11 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Regent Seven Seas Cruises",
-    "site_name": "Regent Seven Seas Cruises",
-    "site_url": "www.rssc.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10643",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5009_big_09122014.jpg",
+    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Crystal Cruises",
+    "site_name": "Crystal Cruises",
+    "site_url": "www.crystalcruises.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10636",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10452_big_09192017.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {
@@ -1192,11 +1176,11 @@
     "expiry_date": "Expires 12/31/2018"
   },
   {
-    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Crystal Cruises",
-    "site_name": "Crystal Cruises",
-    "site_url": "www.crystalcruises.com",
-    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10636",
-    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10452_big_09192017.jpg",
+    "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Regent Seven Seas Cruises",
+    "site_name": "Regent Seven Seas Cruises",
+    "site_url": "www.rssc.com",
+    "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10643",
+    "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5009_big_09122014.jpg",
     "expiry_date": "Expires 12/31/2018"
   },
   {

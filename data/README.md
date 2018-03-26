@@ -57,14 +57,15 @@ This assumes you are using Chrome Web Browser to access the raw data on Discover
 
 1. Login to www.discover.com
 2. Visit [this page](https://card.discover.com/cardmembersvcs/deals/app/home#/deals)
-3. Right Click -> Inspect Element
-4. Find the following element in the Elements tree: `<div class="rows deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
-5. Right Click -> Copy -> Copy Element
-6. Delete the contents in `/data/deal/raw.html`.
-7. Paste data into this file. Don't worry about any errors in the file.
-8. Delete `<div class="row deals">` from the file. This should be the first html element in the file.
-9. Copy the entire last line of the file and paste it right at the beginning of the file.
-10. Ensure there are no empty lines at the end of the file. Once again, don't worry about errors your IDE reports.
+3. Click on the `All Deals` button in the top-right corner.
+4. Right Click -> Inspect Element
+5. Find the following element in the Elements tree: `<div class="rows deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
+6. Right Click -> Copy -> Copy Element
+7. Delete the contents in `/data/deal/raw.html`.
+8. Paste data into this file. Don't worry about any errors in the file.
+9. Delete `<div class="row deals">` from the file. This should be the first html element in the file.
+10. Copy the entire last line of the file and paste it right at the beginning of the file.
+11. Ensure there are no empty lines at the end of the file. Once again, don't worry about errors your IDE reports.
 
 #### Cashback Offers
 
@@ -103,7 +104,7 @@ npm run updateDeal
 npm run updateCashback
 ```
 
-Now all the processed data should be in the following directories:
+Now all the processed data (in JSON format) should be in the following files:
 - `/data/deal/data.json`
 - `/data/cashback/data.json`
 
