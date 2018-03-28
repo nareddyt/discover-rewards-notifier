@@ -14,4 +14,4 @@ Please read the documentation and comments inside that script for more info.
 
 A config file for handlebars. This allows developers to automatically re-compile handlebar templates anytime they are changed.
 
-To use this feature, see [../templates/README.md](../templats/README.md).
+To use this feature, see [../templates/README.md](../templates/README.md).
