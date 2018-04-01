@@ -6,7 +6,7 @@
 
 // Switch this if you want to load data directly from the `/data` folder
 // In prod, the extension always loads data from our project website
-const IS_DEV_MODE = 0;
+const IS_DEV_MODE = 1;
 
 // Constants
 const PRODUCT_WEBSITE_URL = 'https://www.tejunareddy.com/discover-rewards-notifier/';
@@ -34,21 +34,45 @@ function fetchData(callback) {
 
   // Call cashback data fetcher based on DEV or PROD
   const CASHBACK_LOCATION = IS_DEV_MODE? CASHBACK_DATA_PATH_DEV : CASHBACK_DATA_URL_PROD;
+  console.debug('Cashback data location', CASHBACK_LOCATION);
   fetchJSON(CASHBACK_LOCATION, onCashbackData);
 
-  function onCashbackData(data) {
+  function onCashbackData(err, data) {
+    if (err) {
+      console.warn('Could not load cashback data.', err);
+
+      if (!cashbacks) {
+        console.error('Cashback data has never been loaded! Extension will not work')
+        // TODO retry
+      }
+      return;
+    }
+
+    // Set the data
     cashbacks = data;
 
     // Call deal data fetcher based on DEV or PROD
+    console.debug('Deals data location', CASHBACK_LOCATION);
     const DEAL_LOCATION = IS_DEV_MODE? DEAL_DATA_PATH_DEV : DEAL_DATA_URL_PROD;
     fetchJSON(DEAL_LOCATION, onDealData);
   }
 
-  function onDealData(data) {
+  function onDealData(err, data) {
+    if (err) {
+      console.warn('Could not load deals data.', err);
+
+      if (!deals) {
+        console.error('Deals data has never been loaded! Extension will not work')
+        // TODO retry
+      }
+      return;
+    }
+
+    // Set the data
     deals = data;
 
     // Done fetching and loading the data, call the callback
-    console.debug('Fetched and loaded the latest data');
+    console.info('Fetched and loaded the latest Discover data successfully :)');
     callback();
   }
 }
@@ -76,7 +100,6 @@ function registerListeners() {
  */
 function onTabRemoved(tabId) {
   // Remove all enabled items for this tab
-  // console.debug(tabId, 'removed');
   delete enabledItems[tabId];
   console.debug(enabledItems);
 }
@@ -85,7 +108,6 @@ function onTabRemoved(tabId) {
  * Callback for when a tab is updated. Tied to the chrome event handler.
  */
 function onTabUpdated(tabId, changeInfo, tab) {
-  // console.debug(tabId, changeInfo, tab);
 
   if (!cashbacks || !deals) {
     // Should never happen
@@ -95,12 +117,10 @@ function onTabUpdated(tabId, changeInfo, tab) {
 
   // Only look at the url when tab state first changes to loading
   if (changeInfo.status !== "loading") {
-    // console.debug(tabId, 'not doing anything interesting');
     return;
   }
 
   let newUrl = tab.url;
-  // console.debug(tabId, 'New url:', newUrl);
 
   // Determine which items should be displayed for this url
   // FIXME loading this each time might be inefficient. Could try caching the results
@@ -108,15 +128,12 @@ function onTabUpdated(tabId, changeInfo, tab) {
   if (items.length === 0) {
     // There are no items for this url
 
-    // console.debug(tabId, newUrl, 'has no deals');
-
     if (!getEnabledItems(tabId)) {
       // Page action for tab was already inactive, no need to do anything
       return;
     }
 
     // Hide page icon and set title
-    // console.debug(tabId, 'Hiding page action');
     chrome.pageAction.hide(tabId);
     chrome.pageAction.setTitle({
       tabId: tabId,
@@ -124,17 +141,15 @@ function onTabUpdated(tabId, changeInfo, tab) {
     });
 
     // Remove from enabled
-    // console.info(tabId, 'Removing', tabId, 'from enabledItems');
     delete enabledItems[tabId];
     console.debug(enabledItems);
 
     return;
   }
   // else, there are items for this page!
-  console.info(tabId, newUrl, 'has items', items);
+  console.debug(tabId, newUrl, 'has items', items);
 
   // Enable page action and set title
-  // console.info(tabId, 'Showing page action');
   chrome.pageAction.show(tabId);
   chrome.pageAction.setTitle({
     tabId: tabId,
@@ -142,7 +157,6 @@ function onTabUpdated(tabId, changeInfo, tab) {
   });
 
   // Add to enabled
-  // console.info(tabId, 'Adding', tabId, 'to enabledItems');
   enabledItems[tabId] = items;
   console.debug(enabledItems);
 }
@@ -186,14 +200,19 @@ function getItemsForUrl(url) {
  */
 function fetchJSON(location, callback) {
   let httpRequest = new XMLHttpRequest();
+
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState === 4) {
       if (httpRequest.status === 200) {
         let data = JSON.parse(httpRequest.responseText);
-        callback(data);
+        return callback(null, data);
+      } else {
+        let err = 'Failed loading data from: ' + location;
+        return callback(err, null);
       }
     }
   };
+
   httpRequest.open('GET', location);
   httpRequest.send();
 }
