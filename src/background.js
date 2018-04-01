@@ -4,10 +4,18 @@
  * It does this by matching the tab's url to the urls in the data files.
  */
 
-const CASHBACK_DATA_PATH = '../data/cashback/data.json';
-const DEAL_DATA_PATH = '../data/deal/data.json';
+// Switch this if you want to load data directly from the `/data` folder
+// In prod, the extension always loads data from our project website
+const IS_DEV_MODE = 0;
 
-// Loaded data from the files
+// Constants
+const PRODUCT_WEBSITE_URL = 'https://www.tejunareddy.com/discover-rewards-notifier/';
+const CASHBACK_DATA_URL_PROD = PRODUCT_WEBSITE_URL + 'cashbacks.json';
+const DEAL_DATA_URL_PROD = PRODUCT_WEBSITE_URL + 'deals.json';
+const CASHBACK_DATA_PATH_DEV = '../data/cashback/data.json';
+const DEAL_DATA_PATH_DEV = '../data/deal/data.json';
+
+// Loaded data from the url / files (depending on mode)
 let cashbacks = null;
 let deals = null;
 
@@ -15,29 +23,53 @@ let deals = null;
 // Example: { 'tab 1': ['deal_1', 'deal_2', 'cashback_1'] }
 let enabledItems = {};
 
-// Whenever we detect an update is available, reload the extension
-// We need this (for now) because we use a persistent background page
-// This ensures that users get the latest discover data
-chrome.runtime.onUpdateAvailable.addListener(function(details) {
-  console.warn('New update available!', details);
-  chrome.runtime.reload();
-});
+// Fetch latest data. Register listeners after data is fetched
+fetchData(registerListeners);
 
-// Load the cashback data into memory
-fetchJSONFile(CASHBACK_DATA_PATH, function (data) {
-  cashbacks = data;
+/**
+ * Fetches the latest Discover Deals and Cashback Rewards data.
+ * Fetches data from local file if in DEV mode. Otherwise fetches data from product website.
+ */
+function fetchData(callback) {
 
-  // Load the deals data into memory
-  fetchJSONFile(DEAL_DATA_PATH, function (data) {
+  // Call cashback data fetcher based on DEV or PROD
+  const CASHBACK_LOCATION = IS_DEV_MODE? CASHBACK_DATA_PATH_DEV : CASHBACK_DATA_URL_PROD;
+  fetchJSON(CASHBACK_LOCATION, onCashbackData);
+
+  function onCashbackData(data) {
+    cashbacks = data;
+
+    // Call deal data fetcher based on DEV or PROD
+    const DEAL_LOCATION = IS_DEV_MODE? DEAL_DATA_PATH_DEV : DEAL_DATA_URL_PROD;
+    fetchJSON(DEAL_LOCATION, onDealData);
+  }
+
+  function onDealData(data) {
     deals = data;
 
-    // All the data is loaded into memory!
-    // Add event listeners for the tabs now. These actually do the matching and state changes
-    chrome.tabs.onRemoved.addListener(onTabRemoved);
-    chrome.tabs.onUpdated.addListener(onTabUpdated);
-  });
+    // Done fetching and loading the data, call the callback
+    console.debug('Fetched and loaded the latest data');
+    callback();
+  }
+}
 
-});
+/**
+ * This method registers listeners for Chrome Tabs and Extension updates.
+ * Only needs to be called once. Subsequent calls have no affect.
+ */
+function registerListeners() {
+  // Add event listeners for the tabs. These actually do the matching and state changes
+  chrome.tabs.onRemoved.addListener(onTabRemoved);
+  chrome.tabs.onUpdated.addListener(onTabUpdated);
+
+  // Whenever we detect an update is available, reload the extension
+  // We need this (for now) because we use a persistent background page
+  // This ensures that users get the latest discover data
+  chrome.runtime.onUpdateAvailable.addListener(function(details) {
+    console.warn('New update available!', details);
+    chrome.runtime.reload();
+  });
+}
 
 /**
  * Callback for when a tab is removed. Tied to the chrome event handler.
@@ -149,19 +181,20 @@ function getItemsForUrl(url) {
 }
 
 /**
- * Loads a json file into memory. Returns the object
+ * Loads a json file into memory. Returns the object.
+ * Can pass in a path to a local file or a URL to a remote file.
  */
-function fetchJSONFile(path, callback) {
+function fetchJSON(location, callback) {
   let httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState === 4) {
       if (httpRequest.status === 200) {
         let data = JSON.parse(httpRequest.responseText);
-        if (callback) callback(data);
+        callback(data);
       }
     }
   };
-  httpRequest.open('GET', path);
+  httpRequest.open('GET', location);
   httpRequest.send();
 }
 
