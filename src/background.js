@@ -14,6 +14,8 @@ const CASHBACK_DATA_URL_PROD = PRODUCT_WEBSITE_URL + 'cashbacks.json';
 const DEAL_DATA_URL_PROD = PRODUCT_WEBSITE_URL + 'deals.json';
 const CASHBACK_DATA_PATH_DEV = '../data/cashback/data.json';
 const DEAL_DATA_PATH_DEV = '../data/deal/data.json';
+const REFRESH_DATA_ALARM_NAME = 'refresh-data-alarm';
+const REFRESH_DATA_INTERVAL_MINUTES = 60;
 
 // Loaded data from the url / files (depending on mode)
 let cashbacks = null;
@@ -93,6 +95,34 @@ function registerListeners() {
     console.warn('New update available!', details);
     chrome.runtime.reload();
   });
+
+  // Create an alarm that refreshes the deals and cashback data every so often
+  // This keeps the data up-to-date
+  // But first, Add a listener to listen for updates
+  chrome.alarms.onAlarm.addListener(onAlarmFired);
+  chrome.alarms.create(REFRESH_DATA_ALARM_NAME, {
+    periodInMinutes: REFRESH_DATA_INTERVAL_MINUTES
+  });
+
+  console.warn('Registered all listeners :)');
+}
+
+function onAlarmFired(alarm) {
+  let name = alarm.name;
+
+  switch (name) {
+
+    case REFRESH_DATA_ALARM_NAME:
+      fetchData(function() {
+        console.info(name, 'alarm done refreshing data');
+      });
+      break;
+
+    default:
+      console.error('Unknown alarm fired:', alarm);
+      break;
+
+  }
 }
 
 /**

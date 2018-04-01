@@ -20,6 +20,7 @@
   },
   "permissions" : [
     "tabs",
+    "alarms",
     "https://www.tejunareddy.com/discover-rewards-notifier/*"
   ],
   "short_name": "Discover® Rewards Notifier",

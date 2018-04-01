@@ -1,6 +1,6 @@
 # Core Extension Code
 
-This directory contains all the core code that the extension uses.
+This directory contains all the core code for the extension. This is the only _code_ packaged with the extension.
 It also has some CSS for styling and the Handlebars library.
 See [../templates](../templates) for more info on Handlebars.
 
