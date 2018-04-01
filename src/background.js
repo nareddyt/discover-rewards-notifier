@@ -6,7 +6,7 @@
 
 // Switch this if you want to load data directly from the `/data` folder
 // In prod, the extension always loads data from our project website
-const IS_DEV_MODE = 1;
+const IS_DEV_MODE = 0;
 
 // Constants
 const PRODUCT_WEBSITE_URL = 'https://www.tejunareddy.com/discover-rewards-notifier/';
