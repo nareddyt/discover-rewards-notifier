@@ -17,3 +17,11 @@ bundle exec jekyll serve
 ```
 
 The console should give you a link to visit. Just visit that link in your web browser!
+
+## Viewing data
+
+As explained in [../data/README.md](../data/README.md), the Discover data is duplicated into this directory.
+In production, the extension periodically polls for the latest data from these files via a HTTP call.
+
+To view the data after launching the site, append `/deals.json` or `/cashbacks.json` to the link (from the section above).
+Alternatively, you can view the data by just opening the json file in your IDE.
