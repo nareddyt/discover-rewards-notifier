@@ -59,7 +59,7 @@ jobs:
       - run:
           name: "Package Extension"
           command: |
-            zip -r ./build/extension.zip . -x node_modules/\* -x .git/\* -x .idea/\* -x tools/\* -x docs/\* -x templates/\* -x build/\* -x .circleci/\*
+            zip -r ./build/extension.zip manifest.json src
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
