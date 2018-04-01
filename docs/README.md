@@ -18,6 +18,8 @@ bundle exec jekyll serve
 
 The console should give you a link to visit. Just visit that link in your web browser!
 
+Feel free to explore the website. There's some interesting legal docs...
+
 ## Viewing data
 
 As explained in [../data/README.md](../data/README.md), the Discover data is duplicated into this directory.
