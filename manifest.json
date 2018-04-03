@@ -19,7 +19,9 @@
     "default_popup": "src/popup.html"
   },
   "permissions" : [
-    "tabs"
+    "tabs",
+    "alarms",
+    "https://www.tejunareddy.com/discover-rewards-notifier/*"
   ],
   "short_name": "Discover® Rewards Notifier",
   "offline_enabled": true,

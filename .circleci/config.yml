@@ -38,7 +38,10 @@ jobs:
             apk add nodejs-npm
             npm install
       - run:
-          name: "Build"
+          name: "Create `build` Directory"
+          command: mkdir ./build
+      - run:
+          name: "Compile Templates"
           command: |
             echo "Compiling handlebars templates..."
             npm run compileTemplates
@@ -51,15 +54,12 @@ jobs:
           name: "Debug: List All Files"
           command: tree -a -I 'node_modules|.git|.idea'
       - run:
-          name: "Debug: Print Prod-Ready Manifest"
+          name: "Debug: Print `manifest.json`"
           command: cat manifest.json
       - run:
           name: "Package Extension"
           command: |
-            zip -r extension.zip . -x \*node_modules/\* -x \*.git/\* -x \*.idea/\*
-            mkdir ./build
-            cp extension.zip ./build/extension.zip
-            rm extension.zip
+            zip -r ./build/extension.zip manifest.json src
       # Use workspaces to move files between `build` and `publish`
       - persist_to_workspace:
           root: /root/project
