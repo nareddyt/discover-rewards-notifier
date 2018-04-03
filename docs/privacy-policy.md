@@ -12,7 +12,7 @@ The terms used in this Privacy Policy have the same meanings as in our Terms and
 
 For a better experience, while using our Service, they service may *unintentionally* acquire certain personally identifiable information. **That information is retained on your device and is not collected by me in any way.**
 
-> We understand the important of privacy. The Chrome extension does NOT send usage information to the internet. Usage data never leaves your computer.
+> We understand the important of privacy. The Chrome extension does NOT send personally identifiable information to the internet. Usage data never leaves your computer.
 
 The Chrome extension does use third party services that may collect information used to identify you. See the next section for more information.
 
@@ -30,6 +30,7 @@ The following is a list of third party services that *most likely* collect usage
 
 - Google: Chrome Web Store
 - Google: Chrome Browser
+- CloudFlare: CDN
 
 ## Links to Other Sites
 
@@ -43,7 +44,7 @@ These Services do not address anyone under the age of 13. I do not knowingly col
 
 ## Changes to This Privacy Policy
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page and sending a notification via the Chrome extension. These changes are effective immediately after they are posted on this page.
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
 
 ## Contact Us
 
