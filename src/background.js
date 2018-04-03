@@ -44,7 +44,7 @@ function fetchData(callback) {
       console.warn('Could not load cashback data.', err);
 
       if (!cashbacks) {
-        console.error('Cashback data has never been loaded! Extension will not work')
+        console.error('Cashback data has never been loaded! Extension will not work');
         // TODO retry
       }
       return;
@@ -64,7 +64,7 @@ function fetchData(callback) {
       console.warn('Could not load deals data.', err);
 
       if (!deals) {
-        console.error('Deals data has never been loaded! Extension will not work')
+        console.error('Deals data has never been loaded! Extension will not work');
         // TODO retry
       }
       return;
