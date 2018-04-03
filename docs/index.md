@@ -24,7 +24,7 @@ The icon will turn orange when the site you visit has an active deal or cashback
 
 ## Explanation of Permissions
 
-[Click here](permissions.md) for in-depth explanation of the permissions the extension requires
+[Click here](permissions.md) for an in-depth explanation of the permissions the extension requires
 
 ## Privacy Policy
 
