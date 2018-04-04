@@ -104,7 +104,7 @@ function registerListeners() {
     periodInMinutes: REFRESH_DATA_INTERVAL_MINUTES
   });
 
-  console.warn('Registered all listeners :)');
+  console.info('Registered all listeners :)');
 }
 
 function onAlarmFired(alarm) {
