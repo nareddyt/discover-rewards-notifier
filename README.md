@@ -2,6 +2,8 @@
 
 # Discover® Deals and Cashback Rewards Notifier
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nareddyt/discover-rewards-notifier.svg)](https://greenkeeper.io/)
+
 [![Users](https://img.shields.io/chrome-web-store/users/ndgeljpfnjlnmbgekhjkchhhgoiipnfi.svg?label=Users)](https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi)
 [![Rating](https://img.shields.io/chrome-web-store/rating/ndgeljpfnjlnmbgekhjkchhhgoiipnfi.svg?label=Rating)](https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi)
 [![CircleCI Build](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master.svg?style=svg)](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master)
