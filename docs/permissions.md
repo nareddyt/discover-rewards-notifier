@@ -17,9 +17,9 @@ Note: The extension only reads your browsing activity, **not** browsing history.
 It will only read the current websites that you have open. It will NEVER read your past browsing history.
 **As stated in our privacy policy, this data remains on your device and we never collect this data**.
 
-## Read and change your data on [www.tejunareddy.com](https://tejunareddy.com/discover-rewards-notifier/)
+## Read and change your data on [www.tejunareddy.com](https://www.tejunareddy.com/discover-rewards-notifier/)
 
-Discover Rewards Notifier requires permission to access the [Project Website](https://tejunareddy.com/discover-rewards-notifier/).
+Discover Rewards Notifier requires permission to access the [Project Website](https://www.tejunareddy.com/discover-rewards-notifier/).
 This website has the latest Discover Deals and Cashback Rewards data.
 So the extension periodically checks this website to download the latest deals and cashback rewards!
 
