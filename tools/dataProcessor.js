@@ -21,9 +21,11 @@
 
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
 const DEAL_INPUT_FILE = 'data/deal/raw.html';
-const DEAL_OUTPUT_FILE = 'data/deal/data.json';
+const DEAL_OUTPUT_FILE = 'data/deal/data.json';     // For developer use
+const DEAL_OUTPUT_FILE_PROD = 'docs/deals.json';    // Served via the product website for end-users
 const CASHBACK_INPUT_FOLDER = 'data/cashback/raw/';
-const CASHBACK_OUTPUT_FILE = 'data/cashback/data.json';
+const CASHBACK_OUTPUT_FILE = 'data/cashback/data.json';     // For developer use
+const CASHBACK_OUTPUT_FILE_PROD = 'docs/cashbacks.json';    // Served via the product website for end-users
 
 // CLI tooling with yargs. Note that using `npm run updateDeal` and `npm run updateCashback` uses this,
 let argv = require('yargs')
@@ -243,20 +245,41 @@ function googleSearch(input, callback) {
   });
 }
 
-// Deals: Write to json
+// Deals: Write to json. Note we write the same data to 2 different places
 function saveDealsData() {
   jsonfile.writeFile(DEAL_OUTPUT_FILE, deals, {spaces: 2}, function (err) {
     if (err) {
       console.error(err);
+      return;
     }
+    console.log('Deals written to', DEAL_OUTPUT_FILE);
+
+    jsonfile.writeFile(DEAL_OUTPUT_FILE_PROD, deals, {spaces: 2}, function (err) {
+      if (err) {
+        console.error(err);
+        return;
+      }
+
+      console.log('Deals written to', DEAL_OUTPUT_FILE_PROD);
+    })
   })
 }
 
-// Cashbacks: Write to json
+// Cashbacks: Write to json. Note we write the same data to 2 different places
 function saveCashbacksData() {
   jsonfile.writeFile(CASHBACK_OUTPUT_FILE, cashbacks, {spaces: 2}, function (err) {
     if (err) {
       console.error(err);
+      return;
     }
+    console.log('Cashbacks written to', CASHBACK_OUTPUT_FILE);
+
+    jsonfile.writeFile(CASHBACK_OUTPUT_FILE_PROD, cashbacks, {spaces: 2}, function (err) {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log('Cashbacks written to', CASHBACK_OUTPUT_FILE_PROD);
+    })
   })
 }
