@@ -16,6 +16,7 @@ const CASHBACK_DATA_PATH_DEV = '../data/cashback/data.json';
 const DEAL_DATA_PATH_DEV = '../data/deal/data.json';
 const REFRESH_DATA_ALARM_NAME = 'refresh-data-alarm';
 const REFRESH_DATA_INTERVAL_MINUTES = 60;
+const REQUEST_TIMEOUT_SECONDS = 10;
 
 // Loaded data from the url / files (depending on mode)
 let cashbacks = null;
@@ -232,18 +233,31 @@ function fetchJSON(location, callback) {
   let httpRequest = new XMLHttpRequest();
 
   httpRequest.onreadystatechange = function() {
-    if (httpRequest.readyState === 4) {
+    if (httpRequest.readyState === XMLHttpRequest.DONE) {
+
       if (httpRequest.status === 200) {
-        let data = JSON.parse(httpRequest.responseText);
-        return callback(null, data);
+
+        try {
+          let data = JSON.parse(httpRequest.responseText);
+          return callback(null, data);
+        } catch (e) {
+          return callback(e, null);
+        }
+
       } else {
-        let err = 'Failed loading data from: ' + location;
+        let err = 'HTTP Error Code: ' + httpRequest.status;
         return callback(err, null);
       }
     }
   };
 
+  httpRequest.ontimeout = function (e) {
+    let err = 'Request timed out after ' + REQUEST_TIMEOUT_SECONDS + ' seconds';
+    callback(err, null);
+  };
+
   httpRequest.open('GET', location);
+  httpRequest.timeout = REQUEST_TIMEOUT_SECONDS * 1000;
   httpRequest.send();
 }
 
