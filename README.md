@@ -109,7 +109,7 @@ Now that you have the extension setup, follow any one of these guides to learn h
 - If you plan on contributing, **don't** develop on the repo you just cloned. Instead, you should make a **fork**, clone that fork to your computer, and develop with that. [Here is an excellent tutorial on how to use forks](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 - After making changes, you must reload the extension in Chrome. See the following snippet from the [Chrome Developer Guide](https://developer.chrome.com/extensions/getstarted#unpacked):
 
-> The files are only parsed when the extension is loaded. If you want to see your changes in action, the extension has to be reloaded. Visit the extensions page (go to chrome://extensions, or More Tools > Extensions under the Chrome menu), and click Reload under your extension. All extensions are also reloaded when the extensions page is reloaded, e.g. after hitting F5 or Ctrl-R.
+> The files are only parsed when the extension is loaded. If you want to see your changes in action, the extension has to be reloaded. Visit the extensions page (go to chrome://extensions, or More Tools > Extensions under the Chrome menu), and click Reload under your extension.
 
 ### Discover® Data
 
