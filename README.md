@@ -2,12 +2,11 @@
 
 # Discover® Deals and Cashback Rewards Notifier
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/nareddyt/discover-rewards-notifier.svg)](https://greenkeeper.io/)
-
 [![Users](https://img.shields.io/chrome-web-store/users/ndgeljpfnjlnmbgekhjkchhhgoiipnfi.svg?label=Users)](https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi)
 [![Rating](https://img.shields.io/chrome-web-store/rating/ndgeljpfnjlnmbgekhjkchhhgoiipnfi.svg?label=Rating)](https://chrome.google.com/webstore/detail/discover%C2%AE-deals-and-cashb/ndgeljpfnjlnmbgekhjkchhhgoiipnfi)
 [![CircleCI Build](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master.svg?style=svg)](https://circleci.com/gh/nareddyt/discover-rewards-notifier/tree/master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c196a657cab442c98672c7b52fafe1f9)](https://www.codacy.com/app/nareddyt/discover-rewards-notifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nareddyt/discover-rewards-notifier&amp;utm_campaign=Badge_Grade)
+[![Greenkeeper badge](https://badges.greenkeeper.io/nareddyt/discover-rewards-notifier.svg)](https://greenkeeper.io/)
 [![Beginner Friendly Project](https://img.shields.io/badge/beginner%20friendly-%E2%9D%A4-red.svg)](https://github.com/MunGell/awesome-for-beginners)
 
 A Chrome Extension that shows a notification when visiting sites that qualify for Discover® Deals or Cashback Rewards.
