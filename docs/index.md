@@ -103,3 +103,5 @@ This project is open-source and licensed under **GPLv3**.
     }
 }
 </script>
+
+{% include ga.html %}
