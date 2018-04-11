@@ -28,3 +28,5 @@ _Without permission to access this website, Discover Rewards Notifier may show y
 Note: The extension only reads data from this website.
 It never pushes any data to the website from your device.
 **As stated in our privacy policy, data is never sent to our servers**.
+
+{% include ga.html %}

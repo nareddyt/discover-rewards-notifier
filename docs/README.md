@@ -27,3 +27,5 @@ In production, the extension periodically polls for the latest data from these f
 
 To view the data after launching the site, append `/deals.json` or `/cashbacks.json` to the link (from the section above).
 Alternatively, you can view the data by just opening the json file in your IDE.
+
+{% include ga.html %}
