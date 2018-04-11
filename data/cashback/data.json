@@ -3,8 +3,7 @@
     "site_url": "www.1800flowers.com",
     "offers": [
       "$20 gets you $30",
-      "$40 gets you $60",
-      "$80 gets you $120"
+      "$40 gets you $60"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP329",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP329.gif",
@@ -136,13 +135,13 @@
     "site_name": "Bed Bath & Beyond"
   },
   {
-    "site_url": "www.blackangus.com",
+    "site_url": "www.belk.com",
     "offers": [
-      "$20 gets you $25"
+      "$45 gets you $50"
     ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP048",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP048.gif",
-    "site_name": "Black Angus Steakhouse"
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP492",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP492.gif",
+    "site_name": "Belk"
   },
   {
     "site_url": "www.basspro.com",
@@ -155,7 +154,16 @@
     "site_name": "Bass Pro Shops - Featured"
   },
   {
-    "site_url": "qa.bonefishgrill.com",
+    "site_url": "www.blackangus.com",
+    "offers": [
+      "$20 gets you $25"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP048",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP048.gif",
+    "site_name": "Black Angus Steakhouse"
+  },
+  {
+    "site_url": "www.bonefishgrill.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -351,13 +359,13 @@
     "site_name": "Domino's"
   },
   {
-    "site_url": "www.einsteinbros.com",
+    "site_url": "en.wikipedia.org",
     "offers": [
       "$45 gets you $50"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP394",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP394.gif",
-    "site_name": "Einstein Bros. Bagels"
+    "site_name": "Einstein Bros.-Noah’s Bagels"
   },
   {
     "site_url": "www.express.com",
@@ -613,7 +621,7 @@
     "site_name": "Nordstrom"
   },
   {
-    "site_url": "www.oldnavy.com",
+    "site_url": "oldnavy.gap.com",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50",
@@ -853,7 +861,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP197",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP197.gif",
-    "site_name": "SpaFinder"
+    "site_name": "Spafinder"
   },
   {
     "site_url": "www.staples.com",
@@ -876,7 +884,6 @@
   {
     "site_url": "www.sunglasshut.com",
     "offers": [
-      "$20 gets you $30",
       "$40 gets you $50",
       "$80 gets you $100"
     ],
