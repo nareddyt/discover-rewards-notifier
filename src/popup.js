@@ -82,5 +82,14 @@ function createHtml(items) {
 
 }
 
+// Add Handlebars helper to check length of an array
+Handlebars.registerHelper('checklength', function (v1, v2, options) {
+'use strict';
+   if (v1.length>v2) {
+     return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
 // Whenever the script starts, run this function
 window.onload = fetchDeal;
