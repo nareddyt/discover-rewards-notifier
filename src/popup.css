@@ -4,13 +4,13 @@ img {
 .img-container{
     text-align: center;
     height: 100%;
+    width: 200px
 }
 .item-box {
     border: 1px solid grey;
     margin: 10px;
     padding: 5px 20px 10px;
     text-align: center;
-    width: 200px
 }
 .expiry {
     text-align: center;
