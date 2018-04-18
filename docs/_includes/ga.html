@@ -12,6 +12,9 @@
   ga('send', 'pageview', {
     'page': '/discover-rewards-notifier' + location.pathname
   });
+  if (location.hostname !== 'www.tejunareddy.com') {
+    ga('set', 'dimension1', "teju===this-value-prevents-devs-from-showing-up-in-prod-metrics===teju");
+  }
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <script async src="autotrack.js"></script>
