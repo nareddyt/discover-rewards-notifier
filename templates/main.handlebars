@@ -6,9 +6,9 @@
 		  <div class="carousel-inner">
 		    {{#each items}}
 		    	{{#if @first}}
-		    		<div class="deal item active">{{{this}}}</div>
+		    		<div class="offer item active">{{{this}}}</div>
 		    	{{else}}
-		    		<div class="deal item">{{{this}}}</div>
+		    		<div class="offer item">{{{this}}}</div>
 		    	{{/if}}
 	    	{{/each}}
 		  </div>
@@ -25,7 +25,7 @@
 		</div>
 	{{else}}
 		{{#each items}}
-	    	<div class="deal">{{{this}}}</div>
+	    	<div class="offer">{{{this}}}</div>
 		{{/each}}
 	{{/checklength}}
 </span>

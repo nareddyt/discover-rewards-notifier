@@ -1,6 +1,19 @@
+h1 {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+h2 {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+hr {
+    border-top: 1px solid black;
+}
 img {
     max-height: 100px;
 }
+
 .img-container{
     text-align: center;
     height: 100%;
@@ -34,7 +47,14 @@ a.button {
     padding: 10px 30px 10px;
     margin-bottom: 5px;
 }
-
-.deal {
+.carousel-control.left, .carousel-control.right {
+    max-height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    margin-top: -50px;
+}
+.offer {
     display:inline-block;
 }
