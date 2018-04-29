@@ -232,6 +232,11 @@ function googleSearch(input, callback) {
         const hostname = siteUrl.hostname;
         console.log('Found hostname', hostname);
 
+        if (hostname.indexOf('wikipedia') > -1) {
+          console.warn('next link...');
+          continue;
+        }
+
         // Call the callback we passed in
         callback(hostname);
         return;
