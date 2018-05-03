@@ -146,16 +146,17 @@ function onTabUpdated(tabId, changeInfo, tab) {
     return;
   }
 
-  // Only look at the url when tab state first changes to loading
-  if (changeInfo.status !== "loading") {
+  let newUrl = tab.url;
+  let newTitle = tab.title;
+
+  // Continue with the logic only if there are no items or the page is loading
+  if (getEnabledItems(tabId) && changeInfo.status !== "loading") {
     return;
   }
 
-  let newUrl = tab.url;
-
   // Determine which items should be displayed for this url
-  // FIXME loading this each time might be inefficient. Could try caching the results
-  let items = getItemsForUrl(newUrl);
+  // FIXME loading this each time might be inefficient. Could try caching the results or using a better DS
+  let items = getItemsForUrlOrName(newUrl, newTitle);
   if (items.length === 0) {
     // There are no items for this url
 
@@ -178,7 +179,7 @@ function onTabUpdated(tabId, changeInfo, tab) {
     return;
   }
   // else, there are items for this page!
-  console.debug(tabId, newUrl, 'has items', items);
+  console.debug(tabId, newUrl, 'for site', newTitle, 'has items', items);
 
   // Enable page action and set title
   chrome.pageAction.show(tabId);
@@ -193,18 +194,24 @@ function onTabUpdated(tabId, changeInfo, tab) {
 }
 
 /**
- * Returns the deal and cashback objects that match the given url.
+ * Returns the deal and cashback objects that match the given url OR title.
  */
-function getItemsForUrl(url) {
+function getItemsForUrlOrName(url, title) {
   let items = [];
+  title = title.toLowerCase();
 
   // Iterate through deals
   for (let i = 0; i < deals.length; i++) {
     let deal = deals[i];
     let deal_url = deal.site_url;
+    let deal_name = deal.site_name.toLowerCase();
 
-    // Simple sub-stringing to match urls with hostname
+    // Simple sub-stringing to match urls with hostname or tab title with site name
     if (url.includes(deal_url)) {
+      deal.type = 'deal';
+      items.push(deal);
+    } else if (title.includes(deal_name)) {
+      console.warn(deal_url, 'with name', deal_name, 'did not match', url, '... falling back to title');
       deal.type = 'deal';
       items.push(deal);
     }
@@ -214,9 +221,14 @@ function getItemsForUrl(url) {
   for (let i = 0; i < cashbacks.length; i++) {
     let cashback = cashbacks[i];
     let cashback_url = cashback.site_url;
+    let cashback_name = cashback.site_name.toLowerCase();
 
-    // Simple sub-stringing to match urls with hostname
+    // Simple sub-stringing to match urls with hostname or site title with site name
     if (url.includes(cashback_url)) {
+      cashback.type = 'cashback';
+      items.push(cashback);
+    } else if (title.includes(cashback_name)) {
+      console.warn(cashback_url, 'with name', cashback_name, 'did not match', url, '... falling back to title');
       cashback.type = 'cashback';
       items.push(cashback);
     }
