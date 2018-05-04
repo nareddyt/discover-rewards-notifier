@@ -63,7 +63,7 @@ This assumes you are using Chrome Web Browser to access the raw data on Discover
 2. Visit [this page](https://card.discover.com/cardmembersvcs/deals/app/home#/deals)
 3. Click on the `All Deals` button in the top-right corner.
 4. Right Click -> Inspect Element
-5. Find the following element in the Elements tree: `<div class="rows deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
+5. Find the following element in the Elements tree: `<div class="row deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
 6. Right Click -> Copy -> Copy Element
 7. Delete the contents in `/data/deal/raw.html`.
 8. Paste data into this file. Don't worry about any errors in the file.

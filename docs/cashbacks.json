@@ -257,13 +257,13 @@
     "site_name": "Chart House Restaurants"
   },
   {
-    "site_url": "www.chilis.com",
+    "site_url": "www.eatdrinkdeals.com",
     "offers": [
-      "$45 gets you $50"
+      "$20 gets you $25"
     ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP114",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP114.gif",
-    "site_name": "Chili's"
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP422",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP422.gif",
+    "site_name": "Chili’s® - Special"
   },
   {
     "site_url": "www.chipotle.com",
@@ -452,6 +452,16 @@
     "site_name": "HomeGoods"
   },
   {
+    "site_url": "www.hotels.com",
+    "offers": [
+      "$45 gets you $50",
+      "$90 gets you $100"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP471",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP471.gif",
+    "site_name": "Hotels.com"
+  },
+  {
     "site_url": "www.ihop.com",
     "offers": [
       "$45 gets you $50"
@@ -556,15 +566,6 @@
     "site_name": "Macy's"
   },
   {
-    "site_url": "www.maggianos.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP116",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP116.gif",
-    "site_name": "Maggiano's"
-  },
-  {
     "site_url": "www.marshallsonline.com",
     "offers": [
       "$45 gets you $50"
@@ -590,6 +591,15 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP375",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP375.gif",
     "site_name": "Morton's"
+  },
+  {
+    "site_url": "www.maggianos.com",
+    "offers": [
+      "$20 gets you $25"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP424",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP424.gif",
+    "site_name": "Maggiano’s® - Special"
   },
   {
     "site_url": "www.neimanmarcus.com",
@@ -651,15 +661,6 @@
     "site_name": "Omaha Steaks"
   },
   {
-    "site_url": "www.ontheborder.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP115",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP115.gif",
-    "site_name": "On The Border"
-  },
-  {
     "site_url": "www.outback.com",
     "offers": [
       "$45 gets you $50"
@@ -667,6 +668,15 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP206",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP206.gif",
     "site_name": "Outback Steakhouse"
+  },
+  {
+    "site_url": "www.ontheborder.com",
+    "offers": [
+      "$20 gets you $25"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP426",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP426.gif",
+    "site_name": "On The Border® - Special"
   },
   {
     "site_url": "www.overstock.com",
@@ -967,7 +977,7 @@
     "site_name": "Ulta"
   },
   {
-    "site_url": "www.uabiz.com",
+    "site_url": "www.underarmour.com",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50"
