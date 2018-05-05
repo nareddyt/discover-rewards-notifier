@@ -207,10 +207,12 @@ function getItemsForUrlOrName(url, title) {
     let deal_name = deal.site_name.toLowerCase();
 
     // Simple sub-stringing to match urls with hostname or tab title with site name
+    // FIXME need to clean this up. Possibly merge with the loop below
     if (url.includes(deal_url)) {
       deal.type = 'deal';
       items.push(deal);
-    } else if (title.includes(deal_name)) {
+    } else if (title.indexOf(deal_name + ' ') === 0 || title.includes(' ' + deal_name + ' ')) {
+      // FIXME this doesn't match the case where the word shows up at the very end of the title
       console.warn(deal_url, 'with name', deal_name, 'did not match', url, '... falling back to title');
       deal.type = 'deal';
       items.push(deal);
@@ -224,10 +226,12 @@ function getItemsForUrlOrName(url, title) {
     let cashback_name = cashback.site_name.toLowerCase();
 
     // Simple sub-stringing to match urls with hostname or site title with site name
+    // FIXME need to clean this up. Possibly merge with the loop above
     if (url.includes(cashback_url)) {
       cashback.type = 'cashback';
       items.push(cashback);
-    } else if (title.includes(cashback_name)) {
+    } else if (title.indexOf(cashback_name + ' ') === 0 || title.includes(' ' + cashback_name + ' ')) {
+      // FIXME this doesn't match the case where the word shows up at the very end of the title
       console.warn(cashback_url, 'with name', cashback_name, 'did not match', url, '... falling back to title');
       cashback.type = 'cashback';
       items.push(cashback);
