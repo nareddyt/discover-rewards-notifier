@@ -1,5 +1,14 @@
 [
   {
+    "site_url": "www.amazon.com",
+    "offers": [
+      "$1 cashback bonus gets you $1 to spend"
+    ],
+    "site_name": "Amazon",
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/offer?page=amazonredeem",
+    "img_src_url": "https://card.discover.com/rewards/images/redeem/logo-amazon.jpg"
+  },
+  {
     "site_url": "www.1800flowers.com",
     "offers": [
       "$20 gets you $30",
@@ -95,7 +104,7 @@
     "site_name": "Bahama Breeze"
   },
   {
-    "site_url": "www.bananarepublic.com",
+    "site_url": "bananarepublic.gap.com",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50",
@@ -220,7 +229,7 @@
     "site_name": "Buffalo Wild Wings"
   },
   {
-    "site_url": "www.burlingtoncoatfactory.com",
+    "site_url": "www.burlington.com",
     "offers": [
       "$20 gets you $25"
     ],
@@ -631,7 +640,7 @@
     "site_name": "Nordstrom"
   },
   {
-    "site_url": "oldnavy.gap.com",
+    "site_url": "www.oldnavy.com",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50",
@@ -808,7 +817,7 @@
     "site_name": "Ruth's Chris Steakhouse"
   },
   {
-    "site_url": "www.yellowpages.com",
+    "site_url": "www.saltgrass.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -922,7 +931,7 @@
     "site_name": "Texas Roadhouse"
   },
   {
-    "site_url": "www.tgifridays.com",
+    "site_url": "locations.tgifridays.com",
     "offers": [
       "$45 gets you $50"
     ],

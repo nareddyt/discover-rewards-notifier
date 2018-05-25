@@ -1,0 +1,11 @@
+[
+  {
+    "site_url": "www.amazon.com",
+    "offers": [
+      "$1 cashback bonus gets you $1 to spend"
+    ],
+    "site_name": "Amazon",
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/offer?page=amazonredeem",
+    "img_src_url": "https://card.discover.com/rewards/images/redeem/logo-amazon.jpg"
+  }
+]

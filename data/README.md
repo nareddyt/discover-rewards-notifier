@@ -7,6 +7,7 @@ This folder contains raw and processed data about **Discover Deals** and **Disco
 ```
 .
 ├── cashback
+│   ├── fixedInputData.json     # Predefined data that need to be included in addition to parsed data
 │   ├── data.json               # Processed cashback data
 │   ├── raw                     # Raw cashback data directory (see section below)
 │   │   ├── 1.html
@@ -96,6 +97,8 @@ So for numbers `1` to `6`, repeat the following steps:
 Congrats! You have now retrieved the latest raw data. This is the hardest part of the process.
 
 Just to double check, you might want to visit `page 7` for the URL above and ensure there are no cashback offers on that page. The html should be fairly short if there are no offers.
+
+In addition to the above, there is also a user-defined file, `/data/cashback/fixedInputData.json` where you can modify offers that cannot be parsed normally. As an example, Discover allows $1 cashback to be redeemed for $1 to spend on Amazon.
 
 ### Process the data
 

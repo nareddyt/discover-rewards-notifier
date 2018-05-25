@@ -24,6 +24,7 @@ const DEAL_INPUT_FILE = 'data/deal/raw.html';
 const DEAL_OUTPUT_FILE = 'data/deal/data.json';     // For developer use
 const DEAL_OUTPUT_FILE_PROD = 'docs/deals.json';    // Served via the product website for end-users
 const CASHBACK_INPUT_FOLDER = 'data/cashback/raw/';
+const CASHBACK_INPUT_FILE = 'data/cashback/fixedInputData.json'; // Contains fixed cashback offers (e.g. Amazon offer)
 const CASHBACK_OUTPUT_FILE = 'data/cashback/data.json';     // For developer use
 const CASHBACK_OUTPUT_FILE_PROD = 'docs/cashbacks.json';    // Served via the product website for end-users
 
@@ -62,6 +63,14 @@ if (argv.deal) {
  * Converts a folder of raw html files into a single json file.
  */
 function parseCashbacks() {
+
+  // First, load any predefined fixed cashback offers (e.g. Amazon cashback)
+  let fixedCashbackData = fs.readFileSync(CASHBACK_INPUT_FILE, 'utf8');
+  console.log('Found fixed cashback offers file',CASHBACK_INPUT_FILE);
+
+  for(let offer of JSON.parse(fixedCashbackData)) {
+    cashbacks.push(offer);
+  }
 
   // Find all raw HTMLs from folder
   fs.readdirSync(CASHBACK_INPUT_FOLDER).forEach(file => {
