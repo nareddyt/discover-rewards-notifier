@@ -3,7 +3,7 @@
 If you own a [Discover® Card](https://www.discover.com/) and use Google Chrome Web Browser, this extension is perfect for you. Don't miss out on another Discover® Deal or Cashback Reward again!
 
 <p align="center">
-    <img src="img/screenshots/jcrew.jpg" width="654" height="450" alt="Screenshot of extension in use" />
+    <img src="img/screenshots/jcrew.jpg" width="75%" alt="Screenshot of extension in use" />
 </p>
 
 ## Installation
