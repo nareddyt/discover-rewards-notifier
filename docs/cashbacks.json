@@ -12,7 +12,8 @@
     "site_url": "www.1800flowers.com",
     "offers": [
       "$20 gets you $30",
-      "$40 gets you $60"
+      "$40 gets you $60",
+      "$80 gets you $120"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP329",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP329.gif",
@@ -266,13 +267,13 @@
     "site_name": "Chart House Restaurants"
   },
   {
-    "site_url": "www.eatdrinkdeals.com",
+    "site_url": "www.chilis.com",
     "offers": [
       "$20 gets you $25"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP422",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP422.gif",
-    "site_name": "Chili’s® - Special"
+    "site_name": "Chilis - Special"
   },
   {
     "site_url": "www.chipotle.com",
@@ -293,15 +294,6 @@
     "site_name": "Claim Jumper Restaurants"
   },
   {
-    "site_url": "crackerbarrel.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP401",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP401.gif",
-    "site_name": "Cracker Barrel Old Country"
-  },
-  {
     "site_url": "www.crateandbarrel.com",
     "offers": [
       "$45 gets you $50"
@@ -309,6 +301,15 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP404",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP404.gif",
     "site_name": "Crate & Barrel"
+  },
+  {
+    "site_url": "crackerbarrel.com",
+    "offers": [
+      "$20 gets you $25"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP448",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP448.gif",
+    "site_name": "Cracker Barrel Old Country - Special"
   },
   {
     "site_url": "www.crutchfield.com",
@@ -608,7 +609,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP424",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP424.gif",
-    "site_name": "Maggiano’s® - Special"
+    "site_name": "Maggiano's - Special"
   },
   {
     "site_url": "www.neimanmarcus.com",
@@ -685,7 +686,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP426",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP426.gif",
-    "site_name": "On The Border® - Special"
+    "site_name": "On The Border - Special"
   },
   {
     "site_url": "www.overstock.com",
@@ -706,7 +707,7 @@
     "site_name": "P.F. Chang's China Bistro"
   },
   {
-    "site_url": "www.panerabread.com",
+    "site_url": "panerabread.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -903,6 +904,7 @@
   {
     "site_url": "www.sunglasshut.com",
     "offers": [
+      "$20 gets you $25",
       "$40 gets you $50",
       "$80 gets you $100"
     ],
@@ -931,7 +933,7 @@
     "site_name": "Texas Roadhouse"
   },
   {
-    "site_url": "locations.tgifridays.com",
+    "site_url": "www.tgifridays.com",
     "offers": [
       "$45 gets you $50"
     ],
