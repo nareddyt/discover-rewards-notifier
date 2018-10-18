@@ -121,6 +121,15 @@ function parseCashbacks() {
         cashback.img_src_url = 'https://card.discover.com' + imgTag.attr('src');
         cashback.site_name = imgTag.attr('title');
 
+        // Removing unnecessary cashback suffixes
+        let suffix_check = ['.com',' - Special',' - Featured','®','™' ]
+
+        for(let i = 0; i < suffix_check.length; i++){
+          if (cashback.site_name .indexOf(suffix_check[i]) != -1 && cashback.site_name != 'Hotels.com') {
+            cashback.site_name  = cashback.site_name .replace(suffix_check[i],'');
+          }
+      }
+
         // Note that the number of offers for a single item varies
         let offerTags = $(item).find('div[class="pill giftItem"]');
         offerTags.each(function (index, offer) {
@@ -183,6 +192,15 @@ function parseDeals() {
       img_src_url: xml_line.match("(https:\\/\\/www.discovercard.com\\/extras.*)\" alt")[1],
       expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
     };
+
+    // Removing unnecessary deal suffixes
+    let suffix_check = ['.com',' - Special',' - Featured','®','™' ]
+
+    for(let i = 0; i < suffix_check.length; i++){
+      if (deal.site_name.indexOf(suffix_check[i]) != -1 && deal.site_name != 'Hotels.com') {
+        deal.site_name  = deal.site_name .replace(suffix_check[i],'');
+      }
+    }
 
     // Put this deal object into the main array
     deals.push(deal);
