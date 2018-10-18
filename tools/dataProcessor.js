@@ -126,7 +126,7 @@ function parseCashbacks() {
 
         for(let i = 0; i < suffix_check.length; i++){
           if (cashback.site_name.indexOf(suffix_check[i]) != -1 && cashback.site_name != 'Hotels.com') {
-            cashback.site_name  = cashback.site_name .replace(suffix_check[i],'');
+            cashback.site_name  = cashback.site_name.replace(suffix_check[i],'');
           }
       }
 
