@@ -121,14 +121,8 @@ function parseCashbacks() {
         cashback.img_src_url = 'https://card.discover.com' + imgTag.attr('src');
         cashback.site_name = imgTag.attr('title');
 
-        // Removing unnecessary cashback suffixes
-        let suffix_check = ['.com',' - Special',' - Featured','®','™' ]
-
-        for(let i = 0; i < suffix_check.length; i++){
-          if (cashback.site_name.indexOf(suffix_check[i]) != -1 && cashback.site_name != 'Hotels.com') {
-            cashback.site_name  = cashback.site_name.replace(suffix_check[i],'');
-          }
-      }
+        // This removes unnecessary cashback suffixes
+        removeSuffixes(cashback.site_name);
 
         // Note that the number of offers for a single item varies
         let offerTags = $(item).find('div[class="pill giftItem"]');
@@ -193,15 +187,9 @@ function parseDeals() {
       expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
     };
 
-    // Removing unnecessary deal suffixes
-    let suffix_check = ['.com',' - Special',' - Featured','®','™' ]
-
-    for(let i = 0; i < suffix_check.length; i++){
-      if (deal.site_name.indexOf(suffix_check[i]) != -1 && deal.site_name != 'Hotels.com') {
-        deal.site_name  = deal.site_name .replace(suffix_check[i],'');
-      }
-    }
-
+    // This removes unnecessary deal suffixes
+    removeSuffixes(deal.site_name);
+   
     // Put this deal object into the main array
     deals.push(deal);
   }
@@ -225,6 +213,21 @@ function parseDeals() {
 
     // Keep googling as there's more deals left
     googleSearch(deals[index].site_name, onGoogleDeal);
+  }
+
+}
+
+/**
+ * Removes unnecessary suffixes from a site's name
+ * Does this by checking an array of ignored suffixes and replacing with an empty string.
+ */
+function removeSuffixes(item) {
+  let suffix_check = ['.com',' - Special',' - Featured','®','™' ];
+
+  for(let i = 0; i < suffix_check.length; i++){
+    if (item.indexOf(suffix_check[i]) != -1 && item != 'Hotels.com') {
+      item  = item.replace(suffix_check[i],'');
+    }
   }
 
 }
