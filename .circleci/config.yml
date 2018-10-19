@@ -57,7 +57,7 @@ jobs:
           command: cat manifest.json
       - run:
           name: 'Check Expiry for Coupons'
-          command: npm ./tools/expiredChecker.js
+          command: node ./tools/expiredChecker.js
       - run:
           name: 'Package Extension'
           command: |
