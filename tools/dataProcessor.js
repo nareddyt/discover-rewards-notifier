@@ -229,7 +229,7 @@ function removeSuffixes(item) {
       item  = item.replace(suffix_check[i],'');
     }
   }
-  return item
+  return item;
 }
 
 /**
