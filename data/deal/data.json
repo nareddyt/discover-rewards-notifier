@@ -17,7 +17,7 @@
   },
   {
     "title": "20% off one regularly priced small appliance, BestBuy.com®",
-    "site_name": "BestBuy.com®",
+    "site_name": "BestBuy",
     "site_url": "www.bestbuy.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10552",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9145_big_01272016.jpg",
@@ -34,7 +34,7 @@
   {
     "title": "Get up to 25% off select PCs, Lenovo",
     "site_name": "Lenovo",
-    "site_url": "www3.lenovo.com",
+    "site_url": "www.lenovo.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10600",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10600_big_11292017.jpg",
     "expiry_date": "Expires 06/30/2018"
@@ -73,7 +73,7 @@
   },
   {
     "title": "Get 20% off a purchase, 1800Flowers.com",
-    "site_name": "1800Flowers.com",
+    "site_name": "1800Flowers",
     "site_url": "www.1800flowers.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10698",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6115_big_12112014.jpg",
@@ -169,7 +169,7 @@
   },
   {
     "title": "Get 5% off select hotels, Hotels.com",
-    "site_name": "Hotels.com",
+    "site_name": "Hotels",
     "site_url": "www.hotels.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10680",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6577_big_01272015.jpg",
@@ -529,7 +529,7 @@
   },
   {
     "title": "Get up to $150 in onboard credits through Cruise & Vacation Desk, Disney Cruise Line®",
-    "site_name": "Disney Cruise Line®",
+    "site_name": "Disney Cruise Line",
     "site_url": "disneycruise.disney.go.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10715",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10715_big_01312018.jpg",
@@ -618,7 +618,7 @@
   {
     "title": "Earn 5% Cashback Bonus through Cruise & Vacation Desk, Hard Rock Resorts Mexico",
     "site_name": "Hard Rock Resorts Mexico",
-    "site_url": "www.hardrockhotels.com",
+    "site_url": "www.hrhrivieramaya.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10640",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_10640_big_12072017.jpg",
     "expiry_date": "Expires 12/31/2018"
@@ -850,7 +850,7 @@
   {
     "title": "30% off, Budget Blinds",
     "site_name": "Budget Blinds",
-    "site_url": "www.budgetblinds.com",
+    "site_url": "budgetblinds.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10030",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9773_big_11042016.jpg",
     "expiry_date": "Expires 06/30/2018"
@@ -898,7 +898,7 @@
   {
     "title": "Get $10 off a purchase of $60 or more, Van Heusen",
     "site_name": "Van Heusen",
-    "site_url": "vanheusen.com",
+    "site_url": "vanheusen.partnerbrands.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10738",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_6001_big_12042014.jpg",
     "expiry_date": "Expires 12/31/2018"
@@ -937,7 +937,7 @@
   },
   {
     "title": "Get 20% off a purchase, FragranceNet.com",
-    "site_name": "FragranceNet.com",
+    "site_name": "FragranceNet",
     "site_url": "www.fragrancenet.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10695",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9532_big_07082016.jpg",
@@ -953,7 +953,7 @@
   },
   {
     "title": "Get 10% off any purchase, Shop.NHL.com",
-    "site_name": "Shop.NHL.com",
+    "site_name": "Shop.NHL",
     "site_url": "shop.nhl.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10847",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_5471_big_10282014.jpg",
@@ -1057,7 +1057,7 @@
   },
   {
     "title": "Get 20% off a purchase, 1800Baskets.com",
-    "site_name": "1800Baskets.com",
+    "site_name": "1800Baskets",
     "site_url": "www.1800baskets.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10699",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_9832_big_11162016.jpg",
@@ -1097,7 +1097,7 @@
   },
   {
     "title": "Get 20% off a purchase, Fruitbouquets.com",
-    "site_name": "Fruitbouquets.com",
+    "site_name": "Fruitbouquets",
     "site_url": "www.fruitbouquets.com",
     "deal_url": "https://card.discover.com/cardmembersvcs/deals/app/home#/deal/10701",
     "img_src_url": "https://www.discovercard.com/extras/logo/large/offer_8690_big_10092015.jpg",
