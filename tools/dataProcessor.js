@@ -121,6 +121,9 @@ function parseCashbacks() {
         cashback.img_src_url = 'https://card.discover.com' + imgTag.attr('src');
         cashback.site_name = imgTag.attr('title');
 
+        // This removes unnecessary cashback suffixes
+        cashback.site_name = removeSuffixes(cashback.site_name);
+
         // Note that the number of offers for a single item varies
         let offerTags = $(item).find('div[class="pill giftItem"]');
         offerTags.each(function (index, offer) {
@@ -184,6 +187,9 @@ function parseDeals() {
       expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
     };
 
+    // This removes unnecessary deal suffixes
+    deal.site_name = removeSuffixes(deal.site_name);
+   
     // Put this deal object into the main array
     deals.push(deal);
   }
@@ -209,6 +215,27 @@ function parseDeals() {
     googleSearch(deals[index].site_name, onGoogleDeal);
   }
 
+}
+
+/**
+ * Removes unnecessary suffixes from a site's name
+ * Does this by checking an array of ignored suffixes and replacing with an empty string.
+ */
+function removeSuffixes(item) {
+  
+  // Suffixes to remove
+  let suffix_check = ['.com',' - Special',' - Featured','®','™' ];
+  
+  // Names that require their suffix
+  let ignored_names = ['Hotels.com'];
+
+  // Removing suffixes
+  for(let i = 0; i < suffix_check.length; i++){
+    if (item.indexOf(suffix_check[i]) != -1 && ignored_names.indexOf(item.site_name) == -1) {
+      item = item.replace(suffix_check[i],'');
+    }
+  }
+  return item;
 }
 
 /**
