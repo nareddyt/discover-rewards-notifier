@@ -20,7 +20,6 @@ workflows:
             tags:
               only: /.*/
 
-
 version: 2
 jobs:
   # The `build` step that's referenced above
@@ -30,7 +29,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Install Dependencies"
+          name: 'Install Dependencies'
           command: |
             apk update
             apk add tree
@@ -38,26 +37,29 @@ jobs:
             apk add nodejs-npm
             npm install
       - run:
-          name: "Create `build` Directory"
+          name: 'Create `build` Directory'
           command: mkdir ./build
       - run:
-          name: "Compile Templates"
+          name: 'Compile Templates'
           command: |
             echo "Compiling handlebars templates..."
             npm run compileTemplates
       - run:
-          name: "Make Extension Production Ready"
+          name: 'Make Extension Production Ready'
           command: |
             chmod +x ./.circleci/prod-ready.sh
             bash ./.circleci/prod-ready.sh
       - run:
-          name: "Debug: List All Files"
+          name: 'Debug: List All Files'
           command: tree -a -I 'node_modules|.git|.idea'
       - run:
-          name: "Debug: Print `manifest.json`"
+          name: 'Debug: Print `manifest.json`'
           command: cat manifest.json
       - run:
-          name: "Package Extension"
+          name: 'Check Expiry for Coupons'
+          command: npm ./tools/expiredChecker.js
+      - run:
+          name: 'Package Extension'
           command: |
             zip -r ./build/extension.zip manifest.json src/ icon/
       # Use workspaces to move files between `build` and `publish`
@@ -78,7 +80,7 @@ jobs:
       - attach_workspace:
           at: /root/workspace
       - run:
-          name: "Publish to the Google Chrome Store"
+          name: 'Publish to the Google Chrome Store'
           command: |
             set -eo pipefail
             chmod +x /root/workspace/.circleci/publish-extension.sh
