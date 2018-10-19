@@ -231,7 +231,7 @@ function removeSuffixes(item) {
 
   // Removing suffixes
   for(let i = 0; i < suffix_check.length; i++){
-    if (item.indexOf(suffix_check[i]) != -1 && ignored_names.indexOf(item.site_name) == -1) {
+    if (item.indexOf(suffix_check[i]) != -1 && ignored_names.indexOf(item) == -1) {
       item = item.replace(suffix_check[i],'');
     }
   }
