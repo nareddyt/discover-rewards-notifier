@@ -7,7 +7,8 @@
     "updateDeal": "node tools/dataProcessor.js --deal",
     "updateCashback": "node tools/dataProcessor.js --cashback",
     "compileTemplates": "handlebars templates/ -f src/templates.js",
-    "watchTemplates": "handlebars-watch -c ./tools/hbw-config.json"
+    "watchTemplates": "handlebars-watch -c ./tools/hbw-config.json",
+    "expiredChecker": "node tools/expiredChecker.js"
   },
   "repository": {
     "type": "git",
