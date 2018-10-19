@@ -161,7 +161,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP442",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP442.gif",
-    "site_name": "Bass Pro Shops - Featured"
+    "site_name": "Bass Pro Shops"
   },
   {
     "site_url": "www.blackangus.com",
@@ -218,7 +218,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP053",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP053.gif",
-    "site_name": "Buca di Beppo®"
+    "site_name": "Buca di Beppo"
   },
   {
     "site_url": "www.buffalowildwings.com",
@@ -273,7 +273,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP422",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP422.gif",
-    "site_name": "Chilis - Special"
+    "site_name": "Chilis"
   },
   {
     "site_url": "www.chipotle.com",
@@ -309,7 +309,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP448",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP448.gif",
-    "site_name": "Cracker Barrel Old Country - Special"
+    "site_name": "Cracker Barrel Old Country"
   },
   {
     "site_url": "www.crutchfield.com",
@@ -554,7 +554,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP174",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP174.gif",
-    "site_name": "LongHorn Steakhouse®"
+    "site_name": "LongHorn Steakhouse"
   },
   {
     "site_url": "www.lowes.com",
@@ -603,13 +603,13 @@
     "site_name": "Morton's"
   },
   {
-    "site_url": "www.eatdrinkdeals.com",
+    "site_url": "www.maggianos.com",
     "offers": [
       "$20 gets you $25"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP424",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP424.gif",
-    "site_name": "Maggiano's - Special"
+    "site_name": "Maggiano's"
   },
   {
     "site_url": "www.neimanmarcus.com",
@@ -680,13 +680,13 @@
     "site_name": "Outback Steakhouse"
   },
   {
-    "site_url": "www.eatdrinkdeals.com",
+    "site_url": "www.ontheborder.com",
     "offers": [
       "$20 gets you $25"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP426",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP426.gif",
-    "site_name": "On The Border - Special"
+    "site_name": "On The Border"
   },
   {
     "site_url": "www.overstock.com",
@@ -695,7 +695,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP207",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP207.gif",
-    "site_name": "Overstock.com"
+    "site_name": "Overstock"
   },
   {
     "site_url": "www.pfchangs.com",
@@ -788,7 +788,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP490",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP490.gif",
-    "site_name": "Red Lobster®"
+    "site_name": "Red Lobster"
   },
   {
     "site_url": "www.redrobin.com",
@@ -842,7 +842,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP412",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP412.gif",
-    "site_name": "Seasons 52®"
+    "site_name": "Seasons 52"
   },
   {
     "site_url": "www.sephora.com",
@@ -939,7 +939,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP126",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP126.gif",
-    "site_name": "TGI Fridays™"
+    "site_name": "TGI Fridays"
   },
   {
     "site_url": "www.thecheesecakefactory.com",
@@ -1014,7 +1014,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP390",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP390.gif",
-    "site_name": "Whole Foods Market®"
+    "site_name": "Whole Foods Market"
   },
   {
     "site_url": "www.williams-sonoma.com",
@@ -1033,7 +1033,7 @@
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP413",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP413.gif",
-    "site_name": "Yard House®"
+    "site_name": "Yard House"
   },
   {
     "site_url": "www.zappos.com",

@@ -122,7 +122,7 @@ function parseCashbacks() {
         cashback.site_name = imgTag.attr('title');
 
         // This removes unnecessary cashback suffixes
-        removeSuffixes(cashback.site_name);
+        cashback.site_name = removeSuffixes(cashback.site_name);
 
         // Note that the number of offers for a single item varies
         let offerTags = $(item).find('div[class="pill giftItem"]');
@@ -188,7 +188,7 @@ function parseDeals() {
     };
 
     // This removes unnecessary deal suffixes
-    removeSuffixes(deal.site_name);
+    deal.site_name = removeSuffixes(deal.site_name);
    
     // Put this deal object into the main array
     deals.push(deal);
@@ -229,7 +229,7 @@ function removeSuffixes(item) {
       item  = item.replace(suffix_check[i],'');
     }
   }
-
+  return item
 }
 
 /**
