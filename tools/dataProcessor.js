@@ -226,7 +226,7 @@ function removeSuffixes(item) {
 
   for(let i = 0; i < suffix_check.length; i++){
     if (item.indexOf(suffix_check[i]) != -1 && item != 'Hotels.com') {
-      item  = item.replace(suffix_check[i],'');
+      item = item.replace(suffix_check[i],'');
     }
   }
   return item;
