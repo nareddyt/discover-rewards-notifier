@@ -221,21 +221,21 @@ function parseDeals() {
  * Removes unnecessary suffixes from a site's name
  * Does this by checking an array of ignored suffixes and replacing with an empty string.
  */
-function removeSuffixes(item) {
-  
+function removeSuffixes(itemName) {
+
   // Suffixes to remove
-  let suffix_check = ['.com',' - Special',' - Featured','®','™' ];
-  
+  let suffix_check = ['.com', ' - Special', ' - Featured', '®', '™'];
+
   // Names that require their suffix
   let ignored_names = ['Hotels.com'];
 
   // Removing suffixes
-  for(let i = 0; i < suffix_check.length; i++){
-    if (item.indexOf(suffix_check[i]) != -1 && ignored_names.indexOf(item.site_name) == -1) {
-      item = item.replace(suffix_check[i],'');
+  for (let i = 0; i < suffix_check.length; i++) {
+    if (itemName.indexOf(suffix_check[i]) != -1 && ignored_names.indexOf(itemName) == -1) {
+      itemName = itemName.replace(suffix_check[i], '');
     }
   }
-  return item;
+  return itemName;
 }
 
 /**
