@@ -56,7 +56,7 @@ jobs:
           name: 'Debug: Print `manifest.json`'
           command: cat manifest.json
       - run:
-          name: 'Check Expiry for Coupons'
+          name: 'Check for Stale Data'
           command: node ./tools/expiredChecker.js
       - run:
           name: 'Package Extension'
