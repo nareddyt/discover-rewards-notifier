@@ -273,6 +273,11 @@ function googleSearch(input, callback) {
           continue;
         }
 
+        if (hostname.indexOf('facebook') > -1) {
+          console.warn('next link...');
+          continue;
+        }
+
         // Call the callback we passed in
         callback(hostname);
         return;
