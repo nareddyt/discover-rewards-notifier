@@ -55,8 +55,8 @@ function fetchData(callback) {
     cashbacks = data;
 
     // Call deal data fetcher based on DEV or PROD
-    console.debug('Deals data location', CASHBACK_LOCATION);
     const DEAL_LOCATION = IS_DEV_MODE? DEAL_DATA_PATH_DEV : DEAL_DATA_URL_PROD;
+    console.debug('Deals data location', DEAL_LOCATION);
     fetchJSON(DEAL_LOCATION, onDealData);
   }
 
