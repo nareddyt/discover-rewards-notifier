@@ -310,15 +310,6 @@
     "site_name": "Crate & Barrel"
   },
   {
-    "site_url": "www.cvs.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP128",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP128.gif",
-    "site_name": "CVS/pharmacy"
-  },
-  {
     "site_url": "www.daveandbusters.com",
     "offers": [
       "$45 gets you $50"
@@ -326,15 +317,6 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP175",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP175.gif",
     "site_name": "Dave & Busters"
-  },
-  {
-    "site_url": "www.dell.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP243",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP243.gif",
-    "site_name": "Dell"
   },
   {
     "site_url": "www.dillards.com",
@@ -355,7 +337,7 @@
     "site_name": "Domino's"
   },
   {
-    "site_url": "www.einsteinbros.com",
+    "site_url": "locations.einsteinbros.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -430,7 +412,7 @@
     "site_name": "Groupon"
   },
   {
-    "site_url": "www.yelp.com",
+    "site_url": "happycards.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -483,6 +465,16 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP137",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP137.gif",
     "site_name": "JcPenney"
+  },
+  {
+    "site_url": "www.kirklands.com",
+    "offers": [
+      "$45 gets you $50",
+      "$90 gets you $100"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP514",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP514.gif",
+    "site_name": "Kirkland's"
   },
   {
     "site_url": "www.kmart.com",
@@ -553,6 +545,16 @@
     "site_name": "Lowe's"
   },
   {
+    "site_url": "shop.lululemon.com",
+    "offers": [
+      "$45 gets you $50",
+      "$90 gets you $100"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP510",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP510.gif",
+    "site_name": "lululemon"
+  },
+  {
     "site_url": "www.macys.com",
     "offers": [
       "$45 gets you $50"
@@ -589,6 +591,15 @@
     "site_name": "McCormick & Schmick's"
   },
   {
+    "site_url": "www.michaels.com",
+    "offers": [
+      "$45 gets you $50"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP516",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP516.gif",
+    "site_name": "Michaels"
+  },
+  {
     "site_url": "www.mortons.com",
     "offers": [
       "$45 gets you $50"
@@ -596,15 +607,6 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP375",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP375.gif",
     "site_name": "Morton's"
-  },
-  {
-    "site_url": "www.neimanmarcus.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP349",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP349.gif",
-    "site_name": "Neiman Marcus"
   },
   {
     "site_url": "www.nike.com",
@@ -751,15 +753,6 @@
     "site_name": "Pottery Barn"
   },
   {
-    "site_url": "www.qvc.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP353",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP353.gif",
-    "site_name": "QVC"
-  },
-  {
     "site_url": "www.rainforestcafe.com",
     "offers": [
       "$45 gets you $50"
@@ -769,15 +762,6 @@
     "site_name": "Rainforest Cafe"
   },
   {
-    "site_url": "www.rei.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP485",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP485.gif",
-    "site_name": "Recreational Equipment Inc."
-  },
-  {
     "site_url": "www.redlobster.com",
     "offers": [
       "$45 gets you $50"
@@ -785,15 +769,6 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP490",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP490.gif",
     "site_name": "Red Lobster"
-  },
-  {
-    "site_url": "www.redrobin.com",
-    "offers": [
-      "$20 gets you $25"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP472",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP472.gif",
-    "site_name": "Red Robin"
   },
   {
     "site_url": "www.regmovies.com",
@@ -814,22 +789,32 @@
     "site_name": "Ruth's Chris Steakhouse"
   },
   {
-    "site_url": "www.facebook.com",
+    "site_url": "www.redrobin.com",
+    "offers": [
+      "$20 gets you $25"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP472",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP472.gif",
+    "site_name": "Red Robin"
+  },
+  {
+    "site_url": "www.saksfifthavenue.com",
+    "offers": [
+      "$45 gets you $50",
+      "$90 gets you $100"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP512",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP512.gif",
+    "site_name": "Saks Fifth Avenue"
+  },
+  {
+    "site_url": "www.saltgrass.com",
     "offers": [
       "$45 gets you $50"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP371",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP371.gif",
     "site_name": "Saltgrass Steak House"
-  },
-  {
-    "site_url": "www.sears.com",
-    "offers": [
-      "$45 gets you $50"
-    ],
-    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP170",
-    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP170.gif",
-    "site_name": "Sears"
   },
   {
     "site_url": "www.seasons52.com",
@@ -887,6 +872,15 @@
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP197",
     "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP197.gif",
     "site_name": "Spafinder"
+  },
+  {
+    "site_url": "www.spotify.com",
+    "offers": [
+      "$55 gets you $60"
+    ],
+    "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP520",
+    "img_src_url": "https://card.discover.com/discover/images/cbb/logos/large/CP520.gif",
+    "site_name": "Spotify"
   },
   {
     "site_url": "www.staples.com",
@@ -1043,7 +1037,6 @@
   {
     "site_url": "www.zappos.com",
     "offers": [
-      "$45 gets you $50",
       "$90 gets you $100"
     ],
     "cashback_url": "https://card.discover.com/cardmembersvcs/rewards/app/browsePartner?modeCode=CP391",
