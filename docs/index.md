@@ -1,9 +1,16 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
-If you own a [Discover® Card](https://www.discover.com/) and use Google Chrome Web Browser, this extension is perfect for you. Don't miss out on another Discover® Deal or Cashback Reward again!
+If you own a [Discover® Card](https://www.discover.com/) and use Google Chrome Web Browser, this extension is perfect for you. Don't miss out on another Discover® ~~Deal~~ or Cashback Reward again!
 
 <p align="center">
     <img src="img/screenshots/jcrew.jpg" width="75%" alt="Screenshot of extension in use" />
+</p>
+
+**Note:** *Discover Deals have been retired (by Discover) since November 2018.
+This extension still displays Discover Cashback rewards, but no longer displays Discover Deals.*
+
+<p align="center">
+    <img src="img/screenshots/retired-discover-deals.png" width="75%" alt="Retired discover deals" />
 </p>
 
 ## Installation
