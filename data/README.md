@@ -60,17 +60,24 @@ This assumes you are using Chrome Web Browser to access the raw data on Discover
 
 #### Deals
 
-1. Login to www.discover.com
-2. Visit [this page](https://card.discover.com/cardmembersvcs/deals/app/home#/deals)
-3. Click on the `All Deals` button in the top-right corner.
-4. Right Click -> Inspect Element
-5. Find the following element in the Elements tree: `<div class="row deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
-6. Right Click -> Copy -> Copy Element
-7. Delete the contents in `/data/deal/raw.html`.
-8. Paste data into this file. Don't worry about any errors in the file.
-9. Delete `<div class="row deals">` from the file. This should be the first html element in the file.
-10. Copy the entire last line of the file and paste it right at the beginning of the file.
-11. Ensure there are no empty lines at the end of the file. Once again, don't worry about errors your IDE reports.
+**OUTDATED**
+
+*The documentation in this Deals section is outdated.
+Discover has decided to retire Discover Deals in November 2018.
+This data is no longer updated. Please skip this section and follow the instructions for the Cashback Offers.*
+
+
+~~1. Login to www.discover.com
+.2. Visit [this page](https://card.discover.com/cardmembersvcs/deals/app/home#/deals)
+.3. Click on the `All Deals` button in the top-right corner.
+.4. Right Click -> Inspect Element
+.5. Find the following element in the Elements tree: `<div class="row deals">`. When you hover over this element, you should see all the deal cards become highlighted in blue.
+.6. Right Click -> Copy -> Copy Element
+.7. Delete the contents in `/data/deal/raw.html`.
+.8. Paste data into this file. Don't worry about any errors in the file.
+.9. Delete `<div class="row deals">` from the file. This should be the first html element in the file.
+.10. Copy the entire last line of the file and paste it right at the beginning of the file.
+.11. Ensure there are no empty lines at the end of the file. Once again, don't worry about errors your IDE reports.~~
 
 #### Cashback Offers
 
@@ -107,13 +114,16 @@ Processing the data is abstracted away into a node.js script. All you have to do
 Ensure you are in the root directory of this project. Note the following commands will take a few minutes to run:
 
 ```bash
-npm run updateDeal
 npm run updateCashback
 ```
 
 Now all the processed data (in JSON format) should be in the following files:
-- `/data/deal/data.json`
 - `/data/cashback/data.json`
+
+**Note:** 
+*Previously, this section had instructions for processing Discover Deal data.
+This has been removed because Discover Deals were retired by Discover.
+Processing this data is no longer required.*
 
 Note that this data is also duplicated in the `../docs` directory.
 The extension actually retrieves the data directly from Github pages.
