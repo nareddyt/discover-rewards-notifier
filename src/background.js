@@ -199,19 +199,31 @@ function onTabUpdated(tabId, changeInfo, tab) {
 function getItemsForUrlOrName(url, title) {
   let items = [];
   title = title.toLowerCase();
+    /*create title variations with symbols, whitespaces, and symbols/whitespaces removed for greater degree of string matching*/
+    let title_no_symbols = title.replace(/[^a-zA-Z0-9 ]/g, '');
+    let title_no_whitespace = title.replace(/\s+/g,'');
+    let title_no_symbols_or_whitespace = title_no_symbols.replace(/\s+/g,'');
 
   // Iterate through deals
   for (let i = 0; i < deals.length; i++) {
     let deal = deals[i];
     let deal_url = deal.site_url;
     let deal_name = deal.site_name.toLowerCase();
+    /*create deal name variations with symbols, whitespaces, and symbols/whitespaces removed*/
+    let deal_name_no_symbols = deal_name.replace(/[^a-zA-Z0-9 ]/g, '');
+    let deal_name_no_whitespace = deal_name.replace(/\s+/g,'');
+    let deal_name_no_whitespace_or_symbols = deal_name_no_symbols.replace(/\s+/g,'');
 
-    // Simple sub-stringing to match urls with hostname or tab title with site name
+
+      // Simple sub-stringing to match urls with hostname or tab title with site name
     // FIXME need to clean this up. Possibly merge with the loop below
     if (url.includes(deal_url)) {
       deal.type = 'deal';
       items.push(deal);
-    } else if (title.indexOf(deal_name + ' ') === 0 || title.includes(' ' + deal_name + ' ')) {
+    } else if (title.indexOf(deal_name + ' ') === 0 || title.includes(' ' + deal_name + ' ')|| title.includes(deal_name_no_symbols)
+        || title.includes(deal_name_no_whitespace) || title.includes(deal_name_no_whitespace_or_symbols)
+        || title_no_whitespace.includes(deal_name_no_whitespace) || title_no_symbols.includes(deal_name_no_symbols)
+        || title_no_symbols_or_whitespace.includes(deal_name_no_whitespace_or_symbols) || title_no_whitespace.includes(deal_name)) {
       // FIXME this doesn't match the case where the word shows up at the very end of the title
       console.warn(deal_url, 'with name', deal_name, 'did not match', url, '... falling back to title');
       deal.type = 'deal';
@@ -224,13 +236,21 @@ function getItemsForUrlOrName(url, title) {
     let cashback = cashbacks[i];
     let cashback_url = cashback.site_url;
     let cashback_name = cashback.site_name.toLowerCase();
+    /*create cashback name variations with symbols, whitespaces, and symbols/whitespaces removed*/
+    let cashback_name_no_symbols = cashback_name.replace(/[^a-zA-Z0-9 ]/g, '');
+    let cashback_name_no_whitespace = cashback_name.replace(/\s+/g,'');
+    let cashback_name_no_whitespace_or_symbols = cashback_name_no_symbols.replace(/\s+/g,'');
 
-    // Simple sub-stringing to match urls with hostname or site title with site name
+
+      // Simple sub-stringing to match urls with hostname or site title with site name
     // FIXME need to clean this up. Possibly merge with the loop above
     if (url.includes(cashback_url)) {
       cashback.type = 'cashback';
       items.push(cashback);
-    } else if (title.indexOf(cashback_name + ' ') === 0 || title.includes(' ' + cashback_name + ' ')) {
+    } else if (title.indexOf(cashback_name + ' ') === 0 || title.includes(' ' + cashback_name + ' ')|| title.includes(cashback_name_no_symbols)
+        || title.includes(cashback_name_no_whitespace) || title.includes(cashback_name_no_whitespace_or_symbols)
+        || title_no_whitespace.includes(cashback_name_no_whitespace) || title_no_symbols.includes(cashback_name_no_symbols)
+        || title_no_symbols_or_whitespace.includes(cashback_name_no_whitespace_or_symbols) || title_no_whitespace.includes(cashback_name)) {
       // FIXME this doesn't match the case where the word shows up at the very end of the title
       console.warn(cashback_url, 'with name', cashback_name, 'did not match', url, '... falling back to title');
       cashback.type = 'cashback';
