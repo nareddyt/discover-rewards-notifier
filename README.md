@@ -1,4 +1,4 @@
-<img src="icon/store-icon-128-border.png" align="right" alt="Chrome Web Store Icon" />
+﻿<img src="icon/store-icon-128-border.png" align="right" alt="Chrome Web Store Icon" />
 
 # Discover® Deals and Cashback Rewards Notifier
 
@@ -143,6 +143,12 @@ See [.circleci/README.md](.circleci/README.md)
 See [docs/README.md](docs/README.md)
 
 ## Contributing
+
+To get your code added to the project, first [fork](https://help.github.com/en/articles/fork-a-repo) the repository, make the necessary changes, and then create a [pull request](https://help.github.com/en/articles/about-pull-requests)
+
+  * You are also welcome to work on existing Discover Rewards Notifier issues by looking at the [issue tracker](https://github.com/nareddyt/discover-rewards-notifier/issues). 
+
+  * New to open source contributing? Look for issues with the ["good first issue"]() label to get started.
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on submitting pull requests.
 
