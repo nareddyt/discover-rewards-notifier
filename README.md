@@ -148,7 +148,7 @@ To get your code added to the project, first [fork](https://help.github.com/en/a
 
   * You are also welcome to work on existing Discover Rewards Notifier issues by looking at the [issue tracker](https://github.com/nareddyt/discover-rewards-notifier/issues). 
 
-  * New to open source contributing? Look for issues with the ["good first issue"]() label to get started.
+  * New to open source contributing? Look for issues with the ["good first issue"](https://github.com/nareddyt/discover-rewards-notifier/labels/good%20first%20issue) label to get started.
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on submitting pull requests.
 
