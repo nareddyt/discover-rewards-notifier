@@ -68,7 +68,7 @@
     "site_name": "American Eagle Outfitters"
   },
   {
-    "site_url": "www.athleta.com",
+    "site_url": "athleta.gap.com",
     "offers": [
       "$20 gets you $25",
       "$40 gets you $50"
@@ -283,7 +283,7 @@
     "site_name": "Chipotle Mexican Grill"
   },
   {
-    "site_url": "www.claimjumper.com",
+    "site_url": "claimjumper.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -292,7 +292,7 @@
     "site_name": "Claim Jumper Restaurants"
   },
   {
-    "site_url": "crackerbarrel.com",
+    "site_url": "www.crackerbarrel.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -337,7 +337,7 @@
     "site_name": "Domino's"
   },
   {
-    "site_url": "locations.einsteinbros.com",
+    "site_url": "www.einsteinbros.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -412,7 +412,7 @@
     "site_name": "Groupon"
   },
   {
-    "site_url": "happycards.com",
+    "site_url": "www.giftcards.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -705,7 +705,7 @@
     "site_name": "P.F. Chang's China Bistro"
   },
   {
-    "site_url": "panerabread.com",
+    "site_url": "www.panerabread.com",
     "offers": [
       "$45 gets you $50"
     ],
@@ -855,7 +855,7 @@
     "site_name": "Shutterfly"
   },
   {
-    "site_url": "www.sierratradingpost.com",
+    "site_url": "www.sierra.com",
     "offers": [
       "$45 gets you $50"
     ],
