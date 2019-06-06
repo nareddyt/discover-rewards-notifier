@@ -19,6 +19,11 @@
  * @author Tejasvi Nareddy
  */
 
+const COGNITIVE_SERVICES_BING_KEY=process.env.COGNITIVE_SERVICES_BING_KEY;
+if (COGNITIVE_SERVICES_BING_KEY == null) {
+  throw new Error('Please set the Bing Web Search API key in the environment variable as defined in `tools/README.md`');
+}
+
 const DEAL_URL = "https://card.discover.com/cardmembersvcs/deals/app/home";
 const DEAL_INPUT_FILE = 'data/deal/raw.html';
 const DEAL_OUTPUT_FILE = 'data/deal/data.json';     // For developer use
@@ -41,8 +46,12 @@ let decode = require('unescape');
 let jsonfile = require('jsonfile');
 const { URL } = require('url');
 let cheerio = require('cheerio');
-let google = require('google');
-google.resultsPerPage = 10;
+const CognitiveServicesCredentials = require('ms-rest-azure').CognitiveServicesCredentials;
+const WebSearchAPIClient = require('azure-cognitiveservices-websearch');
+
+// Microsoft Cognitive Services: Bing Web Search
+let credentials = new CognitiveServicesCredentials(COGNITIVE_SERVICES_BING_KEY);
+let webSearchApiClient = new WebSearchAPIClient(credentials);
 
 // Holds the final processed data
 let deals = [];
@@ -109,7 +118,7 @@ function parseCashbacks() {
 
         // Start constructing the cashback reward object for this item
         let cashback = {
-          site_url: null,   // Null for now, the `googleSearch` function fills this field in
+          site_url: null,   // Null for now, the `webSearch` function fills this field in
           offers: []
         };
 
@@ -143,7 +152,7 @@ function parseCashbacks() {
 
   // We now have all the cashbacks, need to google for host names
   let index = 0;
-  googleSearch(cashbacks[index].site_name, onGoogleCashback);
+  webSearch(cashbacks[index].site_name, onGoogleCashback);
 
   // This executes after each google search is done
   function onGoogleCashback(url) {
@@ -159,7 +168,7 @@ function parseCashbacks() {
     }
 
     // Keep googling, there's more cashbacks to process
-    googleSearch(cashbacks[index].site_name, onGoogleCashback);
+    webSearch(cashbacks[index].site_name, onGoogleCashback);
   }
 }
 
@@ -181,7 +190,7 @@ function parseDeals() {
     let deal = {
       title: decode(xml_line.match("\"sr-only\"> (.*)<\\/span>")[1]),
       site_name: decode(xml_line.match("<\\/b> (.*)<\\/h3>")[1]),
-      site_url: null,   // Null for now, the `googleSearch` function fills this field in
+      site_url: null,   // Null for now, the `webSearch` function fills this field in
       deal_url: DEAL_URL + xml_line.match("#\\/deal\\/\\d*")[0],
       img_src_url: xml_line.match("(https:\\/\\/www.discovercard.com\\/extras.*)\" alt")[1],
       expiry_date: decode(xml_line.match("class=\"date\">(.*)<\\/div>")[1])
@@ -189,14 +198,14 @@ function parseDeals() {
 
     // This removes unnecessary deal suffixes
     deal.site_name = removeSuffixes(deal.site_name);
-   
+
     // Put this deal object into the main array
     deals.push(deal);
   }
 
   // We now have all the deals, need to google for the host names
   let index = 0;
-  googleSearch(deals[index].site_name, onGoogleDeal);
+  webSearch(deals[index].site_name, onGoogleDeal);
 
   // This executes after each google search is done
   function onGoogleDeal (url) {
@@ -212,7 +221,7 @@ function parseDeals() {
     }
 
     // Keep googling as there's more deals left
-    googleSearch(deals[index].site_name, onGoogleDeal);
+    webSearch(deals[index].site_name, onGoogleDeal);
   }
 
 }
@@ -240,26 +249,24 @@ function removeSuffixes(itemName) {
 
 /**
  * Determines a site's main hostname.
- * Does this by Googling for the site's name and just pulling the first result.
+ * Does this by using Bing Web Search for the site's name and just pulling the first result.
  */
-function googleSearch(input, callback) {
-  console.log('Googling for', input);
+function webSearch(input, callback) {
+  console.log('Searching for hostname of', input);
 
-  // Google search
-  google(input, function (err, res) {
-    if (err) {
-      console.error(err);
-      return;
-    }
+  // Bing search
+  webSearchApiClient.web.search(input).then((result) => {
 
-    if (res.links.length === 0) {
-      console.error('Wrong length for res.links', res.links.length);
+    // Extract list of websites
+    const websites = result.webPages.value;
+    if (websites.length === 0) {
+      console.error('No websites returned');
       return;
     }
 
     // Iterate through all the links we received from Google
-    for (let i = 0; true; i++) {
-      let link = res.links[i].href;
+    for (let i = 0; i < websites.length; i++) {
+      let link = websites[i].url;
 
       // Found a valid link
       if (link) {
@@ -288,6 +295,8 @@ function googleSearch(input, callback) {
       console.warn('next link...');
     }
 
+  }).catch((err) => {
+    throw err;
   });
 }
 
