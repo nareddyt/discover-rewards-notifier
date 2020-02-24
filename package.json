@@ -24,7 +24,7 @@
     "azure-cognitiveservices-websearch": "^2.0.0",
     "cheerio": "^1.0.0-rc.2",
     "handlebars": "^4.1.2",
-    "jsonfile": "^4.0.0",
+    "jsonfile": "^6.0.0",
     "ms-rest-azure": "^2.6.0",
     "random-useragent": "^0.3.1",
     "unescape": "^1.0.1",
